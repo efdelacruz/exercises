@@ -1,0 +1,97 @@
+#container	{
+	min-height:450px;
+	width:960px;
+	margin:auto;
+	padding:0;
+	font-family: Arial;
+	overflow: hidden;
+	}
+#header	{
+	height:150px;
+	width:100%;
+	background-color: red;
+	}
+#header p	{
+	color: white;
+	}
+#footer	{
+	display: flex;
+	height:100px;
+	width:100%;
+	margin: 0;
+	background-color: lightgray;
+	}
+#footer p	{
+	font-style: bold;
+	margin: 0;
+	align-self: flex-end;
+	}
+#body {
+	width: 100%;
+	min-height: 200px;
+	}
+.green {
+	background-color: forestgreen;
+	width: 960px;
+	min-height: 200px;
+	right: 320px;
+	float: left;
+	position: relative;
+}
+.gold {
+	background-color: gold;
+	width: 960px;
+	min-height: 100px;
+	right: 320px;
+	float: left;
+	position: relative;
+}
+.purple {
+	background-color: purple;
+	width: 960px;
+	min-height: 100px;
+	float: left;
+	position: relative;
+}
+.blue {
+	background-color: royalblue;
+	width: 620px;
+	min-height: 100px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 960px;
+}
+.col {
+	padding: 0 10px;
+}
+.innercol {
+	width: 300px;
+	float: left;
+	position: relative;
+}
+.col1 {
+	width: 300px;
+	float: left;
+	position: relative;
+	left: 640px;
+}
+.col2 {
+	width: 640px;
+	float: left;
+	position: relative;
+	left: 640px;
+}
+.row1 {
+	width: 640px;
+	min-height: 100px;
+	float: left;
+	position: relative;
+}
+.row2 {
+	width: 620px;
+	min-height: 100px;
+	background-color: royalblue;
+	float: left;
+	position: relative;
+}
