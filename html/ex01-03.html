@@ -1,92 +1,8 @@
 <html>
-	<style>
-		#container	{
-					min-height:610px;
-					width:960px;
-					margin:auto;
-					padding:0;
-					}
-		.view-table {
-					display: table;
-					width: 100%;
-					overflow: hidden;
-					}
-		.view-row {
-					display:table-row;
-					}
-		.left	{
-					display:table-cell;
-					width:160px;
-					height:200px;
-					background-color:yellowgreen;
-					clear:none;
-					margin:0;
-					position: relative;
-					}
-		.left p {
-					font-family: Arial;
-					}
-		.center	{
-					display:table-cell;
-					width:600px;
-					height:200px;
-					background-color: purple;
-					clear:none;
-					margin:0;
-					}
-		.right	{
-					display:table-cell;
-					width:200px;
-					height:200px;
-					background-color: royalblue;
-					clear:none;
-					margin:0;
-					}
-		#header	{
-					height:150px;
-					background-color: lightgray;
-					}
-		#footer	{
-					height:100px;
-					background-color:red;
-					}
-		#box-sml	{
-					height:10px;
-					width:10px;
-					background-color:white;
-					position: absolute;
-					}
-		#box-md	{
-					height:30px;
-					width:30px;
-					background-color:white;
-					position: absolute;
-					}
-		.top-left {
-					top:0;
-					left:0;
-					}
-		.top-right {
-					top:0;
-					right:0;
-					}
-		.bottom-left {
-					bottom:0;
-					left:0;
-					}
-		.bottom-right {
-					bottom:0;
-					right:0;
-					}
-		.float-box {
-					width:50px;
-					height:30px;
-					top: 160px;
-					right: 10px;
-					background-color: gold;
-					position:fixed;
-					}
-	</style>
+	<head>
+		<link rel="stylesheet" href="file:///C:/Users/emery.delacruz/git-efdc/exercises/html/ex01-03-others.css" type="text/css" media="screen, projection">
+		<!--[if IE 7]><link rel="stylesheet" href="file:///C:/Users/emery.delacruz/git-efdc/exercises/html/ex01-03-ie7.css" type="text/css" media="screen, projection"><![endif]-->
+	</head>
 	<body>
 		<div id="container">
 		
@@ -95,24 +11,38 @@
 			
 			<div class="float-box"></div>
 			
-			<div class="view-table">
-				<div class="view-row">
-					<div class="left">
+			<div class="container3">
+				<div class="container2">
+					<div class="container1">
+					
+						<!--[if IE 7]>
 						<div id="box-sml" class="top-left"></div>
 						<div id="box-md" class="top-right"></div>
-						<p>
-							test
-						</p>
 						<div id="box-sml" class="bottom-left"></div>
 						<div id="box-sml" class="bottom-right"></div>
-					</div>
+						<![endif]-->
+					
+						<div class="left">
+							<!--[if !(IE 7)]><!-->
+							<div id="box-sml" class="top-left"></div>
+							<div id="box-md" class="top-right"></div>
+							<div id="box-sml" class="bottom-left"></div>
+							<div id="box-sml" class="bottom-right"></div>
+							<!--<![endif]-->
+							<p>
+								test
+							</p>
+						</div>
 				
-					<div class="center">
-					</div>
+						<div class="center">
+							<p>
+							</p>
+						</div>
 			
-					<div class="right">
-						<p>
-						</p>
+						<div class="right">
+							<p>
+							</p>
+						</div>
 					</div>
 				</div>
 			</div>
