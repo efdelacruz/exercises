@@ -6,6 +6,7 @@
 .container3 {
 	float: left;
 	min-height: 200px;
+	height: auto;
 	width: 960px;
 	position: relative;
 	background-color: royalblue;
