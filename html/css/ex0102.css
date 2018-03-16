@@ -34,7 +34,7 @@
 	background-color: forestgreen;
 	width: 960px;
 	min-height: 200px;
-	right: 320px;
+	right: 960px;
 	float: left;
 	position: relative;
 }
@@ -54,12 +54,36 @@
 	position: relative;
 	overflow: hidden;
 }
-.blue {
-	background-color: royalblue;
-	width: 620px;
+.transparent {
+	height: 50%;
+	width: 640px;
+	left: 640px;
+	float: right;
+	position:relative;
 	min-height: 100px;
+	background-color: transparent;
+}
+.blue-container {
+	width: 960px;
+	float: left;
+	min-height: 200px;
 	position: relative;
-	left: 960px;
+	left: 640px;
+	background-color: royalblue;
+}
+.pcontainer{
+	background-color: purple;
+	float: left;
+	position: relative;
+	width: 640px;
+	overflow: hidden;
+}
+.ycontainer{
+	background-color: gold;
+	float: left;
+	position: relative;
+	width: 640px;
+	right:320px;
 }
 .col {
 	padding: 0 10px;
@@ -68,6 +92,15 @@
 	width: 300px;
 	float: left;
 	position: relative;
+	left:320px;
+}
+.yellow {
+	background-color: gold;
+	min-height: 100px;
+}
+.purple2 {
+	background-color: purple;
+	min-height: 100px;
 }
 .col1 {
 	width: 300px;
