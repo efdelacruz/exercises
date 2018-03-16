@@ -1,5 +1,12 @@
 #container {
-	
+	width: 745px;
+	height: 100vh;
+	margin: 0 auto;
+	padding: 0 10px;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-right-width: 1px;
 }
 #header {
 	
@@ -10,16 +17,28 @@
 #footer {
 	
 }
-.right-content-container {
+.banner {
+	width: 100%;
+	height: 287px;
+	background-image: url("../images/ex02-banner.png");
+	background-position: center;
+}
+.left-ribbon{
 	
 }
-.left-content-container {
+.right-ribbon {
 	
 }
-.left-content {
+.nav-container {
 	
 }
-.right-content {
+.description-container {
+	
+}
+.description-content {
+	
+}
+.nav-content {
 	
 }
 
@@ -36,13 +55,13 @@
 	
 }
 
-.main-content {
+.description {
 	
 }
-.main-content h3 {
+.description h3 {
 	
 }
-.main-content p {
+.description p {
 	
 }
 
