@@ -1,86 +1,210 @@
-#container {
-	width: 745px;
-	height: 100vh;
-	margin: 0 auto;
-	padding: 0 10px;
-	border-left-style: solid;
-	border-left-width: 1px;
-	border-right-style: solid;
-	border-right-width: 1px;
+@font-face {
+	font-family: RoundhandBT;
+	src: url('../fonts/RoundhandBoldBT/roundhand-bold-bt.ttf');
+	src: url('../fonts/RoundhandBoldBT/roundhand-bold-bt.ttf?#iefix') format('truetype'), /* IE6-IE8 */
+}
+@font-face {
+	font-family: ProximaNova;
+	src: url('../fonts/ProximaNovaRegular/ProximaNovaRegular.ttf');
+	src: url('../fonts/ProximaNovaRegular/ProximaNovaRegular.ttf?#iefix') format('truetype'), /* IE6-IE8 */
+} 
+@font-face {
+	font-family: Coronet;
+	src: url('../fonts/Coronet-Normal/coronet.ttf');
+	src: url('../fonts/Coronet-Normal/coronet.ttf?#iefix') format('truetype'), /* IE6-IE8 */
+}  
+
+#content {
+	width: 790px;
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	top: 0;
+	overflow: hidden;
+}
+#content a:link {
+    text-decoration: none;
+}
+#content a:hover { 
+	text-decoration: underline;
 }
 #header {
-	
+	position: relative;
 }
 #body {
-	
+	background-image: url("../images/ex02bodyBG790x45.png");
+	background-repeat: repeat-y;
+	position: relative;
+	min-height:500px;
 }
+
 #footer {
-	
+	position: relative;
 }
+.footer-links{
+	margin: 0 auto;
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+    font-family: monospace;
+    font-weight: bold;
+}
+.footer-links a{
+	font-weight: bolder;
+	color: #90B448;
+	margin: 0 6px;
+}
+.footer-links img{
+	height: 14px;
+	width: 14px;
+	display: inline-block;
+}
+
+.ribbon-container {
+	position: relative;
+	width: 100%;
+}.ribbon-image-span img {
+	display: block;
+	width:	100%;
+	height: 300px;
+}
+
 .banner {
 	width: 100%;
-	height: 287px;
-	background-image: url("../images/ex02-banner.png");
+	height: 280px;
+	background-image: url("../images/ex02banner790x280.png");
 	background-position: center;
 }
-.left-ribbon{
-	
-}
-.right-ribbon {
-	
+.footer-border{
+	background-image: url("../images/ex02footerBorder790x40.png");
+	height: 40px;
 }
 .nav-container {
-	
+	float: left;
+	position: relative;
+	width: 790px;
+	min-height: 500px;
 }
 .description-container {
-	
+	float: left;
+	position: relative;
+	width: 790px;
+	min-height: 500px;
+	right: 275px;
 }
 .description-content {
-	
+	float: left;
+	position: relative;
+	width: 425px;
+	padding: 0 30px 0 40px;
+	min-height: 500px;
+	left: 295px;
 }
 .nav-content {
-	
+	float: left;
+	position: relative;
+	min-height: 500px;
+	width: 205px;
+	padding: 0 40px 0 15px;
+	left: 295px;
 }
 
 .intro {
-	
-}
-.intro h3 {
-	
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 14px;
+	color: #ADA66D;
 }
 .intro p {
-	
+	font-style: italic;
+	margin-top: 19px;
 }
-.intro li {
-	
+.intro ul {
+	list-style-image: url("../images/ex02downloadBullet.png");
+	margin: 5px 0 40px 0;
+}
+.intro a{
+	font-weight: bolder;
+	color: #90B448;
 }
 
 .description {
 	
 }
 .description h3 {
-	
+	font-family: RoundhandBT;
+	color: #BCBD93;
+	font-size: 21px;
+    margin: 20px 0 0 8px;
+	border-bottom-color: #BCBD93;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
 }
 .description p {
-	
+	font-family: ProximaNova;
+	color: #9FA57A;
+	font-size: 12.5px;
+    line-height: 17px;
+	text-align: justify;
 }
 
-.design-nav {
-	
+.design-nav a{
+	font-family: ProximaNova;
+	font-style: italic;
+	font-size: 13px;
+	color: #ADA66D;
 }
-.design-nav h3 {
-	
+.design-nav h2 {
+	font-family: Coronet;
+	color: #BAD58E;
+	border-bottom-color: #BAD58E;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+    font-weight: 300;
+    font-size: 36px;
+	margin-top: 0;
+	margin-bottom: 20px;
 }
-.design-nav li {
-	
+.design-nav ul {
+	list-style-image: url("../images/ex02designBullet.png");
+	color: #ADA66D;
+	padding-left: 30px;
+}
+.design-nav p {
+	font-family: ProximaNova;
+	font-size: 12px;
+	color: #BCBD93;
+	margin-top: 0;
 }
 
-.archives-nav {
-	
+.archives-nav a{
+	font-family: ProximaNova;
+	font-style: italic;
+	font-size: 13px;
+	color: #ADA66D;
 }
-.archives-nav h3 {
-	
+.archives-nav h2 {
+	font-family: Coronet;
+	color: #BAD58E;
+	border-bottom-color: #BAD58E;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+    font-weight: 300;
+    font-size: 36px;
+	margin-bottom: 10px;
 }
-.archives-nav li {
-	
+.archives-nav ul {
+	list-style-image: url("../images/ex02archiveBullet.png");
+	color: #ADA66D;
+	padding-left: 30px;
 }
+.archives-nav p {
+	font-family: ProximaNova;
+	font-size: 12px;
+	color: #BCBD93;
+}
+.archives-nav img {
+	display: inline-block;
+}
+

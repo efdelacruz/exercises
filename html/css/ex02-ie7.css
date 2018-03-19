@@ -1,0 +1,32 @@
+#content {
+	left: 25%;
+	right: 25%;
+}
+.description h3{
+	font-family: 'Pinyon Script', cursive;
+}
+.description p {
+	font-family: Helvetica, Geneva, sans-serif;
+}
+.footer-links {
+	font-family: Helvetica, Geneva, sans-serif;
+	font-size: 13px;
+}
+.design-nav a{
+	color: #ADA66D;
+}
+.design-nav h2 {
+	font-family: 'Pinyon Script', cursive;
+}
+.design-nav ul {
+	font-family: Helvetica, Geneva, sans-serif;
+}
+.archives-nav a{
+	color: #ADA66D;
+}
+.archives-nav h2 {
+	font-family: 'Pinyon Script', cursive;
+}
+.archives-nav ul {
+	font-family: Helvetica, Geneva, sans-serif;
+}
