@@ -10,6 +10,10 @@
 		<meta name="robots" content="all">
 		
 		<link rel="stylesheet" href="../css/ex04-normal.css" type="text/css" media="screen, projection">
+		
+		<!-- button color #73BBEC or #73BFF0
+			navbar font Tahoma, Geneva, sans-serif; or "Trebuchet MS", Helvetica, sans-serif or "Helvetica Neue",Helvetica,Arial,sans-serif;
+		-->
 	</head>
 	<body>
 		<div class="page-wrapper">
@@ -20,63 +24,86 @@
 				</div>
 				<div class="nav">
 					<ul>
-						<li class="active">HOME</li>
-						<li>WORK</li>
-						<li>ACTIVITY</li>
-						<li>ABOUT</li>
-						<li>NOTEBOOK</li>
+						<li class="active">
+							<div class="button-left-edge"></div>
+							<span>HOME</span>
+							<div class="button-right-edge"></div>
+						</li>
+						<li class="inactive">
+							<div class="button-left-edge"></div>
+							<span>WORK</span>
+							<div class="button-right-edge"></div>
+						</li>
+						<li class="inactive">
+							<div class="button-left-edge"></div>
+							<span>ACTIVITY</span>
+							<div class="button-right-edge"></div>
+						</li>
+						<li class="inactive">
+							<div class="button-left-edge"></div>
+							<span>ABOUT</span>
+							<div class="button-right-edge"></div>
+						</li>
+						<li class="inactive">
+							<div class="button-left-edge"></div>
+							<span>NOTEBOOK</span>
+							<div class="button-right-edge"></div>
+						</li>
 					</ul>
-				</div>
-				<div class="clear"></div>
-				
-				<div class="banner">
-					<h2 class="hidden">Welcome to my portfolio. Have fun!</h1>
-				</div>
+				</div>				
 			</div>
-			<div class="clear"></div>
+				
+			<div class="banner">
+				<h2 class="hidden">Welcome to my portfolio. Have fun!</h2>
+			</div>
 			
 			<div class="main-content">
 				<div class="left-nav">
-					<h4>Recent Notebook Entries</h4>
-					<ul>
-						<li>Mubarak and the 2011 Egyptian Revolution</li>
-						<li>Customize Bash</li>
-						<li>Hover Zoom Effect with JQuery and CSS</li>
-					</ul>
-					<a>More Notebook Entries</a>
+					<div class="list">
+						<h4>Recent Notebook Entries</h4>
+						<ul>
+							<li>Mubarak and the 2011 Egyptian Revolution</li>
+							<li>Customize Bash</li>
+							<li>Hover Zoom Effect with JQuery and CSS</li>
+							<li class="more-entries"><a>More Notebook Entries</a></li>
+						</ul>
+					</div>
 					
-					<h4>Current Favorite</h4>
-					<ul>
-						<li><b>Book</b> Good to Great</li>
-						<li><b>Music</b> Bach: The Cello Suites</li>
-						<li><b>Site</b> Information Aesthetics</li>
-						<li><b>TV Show</b> The Big Idea</li>
-					</ul>
+					<div class="list">
+						<h4>My Current Favorite</h4>
+						<ul>
+							<li><span>Book:</span> Good to Great</li>
+							<li><span>Music:</span> Bach: The Cello Suites</li>
+							<li><span>Site:</span> Information Aesthetics</li>
+							<li><span>TV Show:</span> The Big Idea</li>
+						</ul>
+					</div>
 					
-					<h4>Digital Life</h4>
-					<ul>
-						<li>ChirpTracker</li>
-						<li>Flickr</li>
-						<li>Vimeo</li>
-						<li>Facebook</li>
-					</ul>
+					<div class="list">
+						<h4>Digital Life</h4>
+						<ul>
+							<li>ChirpTracker</li>
+							<li>Flickr</li>
+							<li>Vimeo</li>
+							<li>Facebook</li>
+						</ul>
+					</div>
 				</div>
 				<div class="featured-project">
 					<h3>Featured Project</h3>
 					<img src="../images/ex04feature.png"/>
 					<p>
-						<b>ChirpTracker</b> is a personal project currently being built to connect birding with the techonology and birders with other birders. It is an ever evolving project and I encourage yu to <a href="#">check it out</a> if you're interested in birding and/or nature.
+						<b>ChirpTracker</b> is a personal project currently being built to connect birding with techonology and birders with other birders. It is an ever evolving project and I encourage yu to <a href="#">check it out</a> if you're interested in birding and/or nature.
 					</p>
 					<p><a href="#">
 						Take a look at some of my work.
 					</a></p>
 				</div>
 			</div>
-			<div class="clear"></div>
 			
 			<div class="footer">
 				<div class="footer-notes">
-					<p>Copyright &copy; 2007 - 2012 Greenova Philippines. All rights reserved</p>
+					<p>Copyright &copy; 2007 - 2012 Greenova Philippines. All rights reserved.</p>
 				</div>
 				<div class="footer-links">
 					<ul>
@@ -88,7 +115,6 @@
 					</ul>
 				</div>
 			</div>
-			<div class="clear"></div>
 			
 		</div>
 	</body>

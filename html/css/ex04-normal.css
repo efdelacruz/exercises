@@ -2,9 +2,9 @@
 @import url("common.css");
 
 body {
-	border-top-color: lightgray;
+	border-top-color: #AAAAAC;
 	border-top-style: solid;
-	border-top-width: 5px;
+	border-top-width: 1px;
 	width: 100%;
 	height: 100vh;
 }
@@ -14,11 +14,17 @@ h3 {
 	font-style: italic;
 	font-size: 28px;
 	margin-bottom: 15px;
+	font-weight: normal;
 }
 h4 {
 	font-weight: bold;
 	color: #535353;
-	margin-bottom: 15px;
+	margin-bottom: 5px;
+	margin-top: 0;
+	font-size: 15px;
+	border-bottom-color: #EEEEEE;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
 }
 b {
 	font-weight: bold;
@@ -45,63 +51,117 @@ b {
 	width: 50%;
 	padding-bottom: 30px;
 }
+.list {
+	margin-bottom: 40px;
+}
 
 
+.second-top-border{
+	border-top-color: #EEEEEE;
+	border-top-style: solid;
+	border-top-width: 4px;
+}
 .page-wrapper {
 	height: 100vh;
 	width: 920px;
 	margin: 0 auto;
-	border-top-color: dimgray;
+	border-top-color: #444444;
 	border-top-style: solid;
-	border-top-width: 5px;
+	border-top-width: 4px;
 	overflow: hidden;
 }
 .header{
 	float: left;
-	width: 100%;
+	width: 920px;
 	min-height: 50px;
-	padding: 30px 15px 0 15px;
-	border-bottom-color: lightgray;
-	border-bottom-style: double;
+	padding: 30px 0 0 0;
+	border-bottom-color: #e2e2e2;
+	border-bottom-style: solid;
 	border-bottom-width: 1px;
+	clear: both;
 }
 .brand{
 	float: left;
 	width: 50%;
 	padding-bottom: 30px;
 }
+.active {
+	background-color: #7AB7E0;
+	color: white !important;
+	font-weight: bold;
+	*max-width: 60px;
+}
+.inactive {
+	*max-width: 85px;
+}
+.active .button-left-edge {
+	background-image: url("../images/ex04button-left-edge.png");
+	width: 11px;
+	height: 22px;
+	display: inline;
+	float: left;
+}
+.active .button-right-edge {
+	background-image: url("../images/ex04button-right-edge.png");
+	width: 11px;
+	height: 22px;
+	display: inline;
+	float: right;
+}
+.inactive .button-left-edge {
+	background-image: url("../images/ex04button-inactive-edge.png");
+	width: 11px;
+	height: 22px;
+	display: inline;
+	float: left;
+}
+.inactive .button-right-edge {
+	background-image: url("../images/ex04button-inactive-edge.png");
+	width: 11px;
+	height: 22px;
+	display: inline;
+	float: right;
+}
 .banner{
 	float: left;
 	width: 100%;
-	min-height: 95px;
-	border-top-color: lightgray;
-	border-top-style: solid;
-	border-top-width: 1px;
+	min-height: 96px;
+	border-bottom-color: #d0d0d0;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
 	background-image: url("../images/ex04banner.png");
 	background-repeat: no-repeat;
+	clear: both;
 }
 .main-content {
 	float: left;
-	padding: 10px 10px;
+	margin-top: 2px;
+	padding: 40px 0;
 	width: 100%;
+	border-top-color: #e2e2e2;
+	border-top-style: solid;
+	border-top-width: 1px;
+	clear: both;
 }
 .left-nav{
 	float: left;
 	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-	width: 250px;
+	width: 220px;
+	padding-right: 30px;
 }
 .featured-project{
 	float: right;
-	width: 650px;
-	padding-top: 40px;
+	width: 654px;
+	padding-left: 16px;
 }
 .footer {
 	float:left;
-	border-top-color: lightgray;
+	border-top-color: #e2e2e2;
 	border-top-style: solid;
 	border-top-width: 1px;
 	width: 100%;
 	min-height: 35px;
+	clear: both;
 }
 .footer-notes{
 	width: 40%;
@@ -113,30 +173,47 @@ b {
 }
 
 
-.nav li {
-	display: inline;
-	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-	padding: 0 10px;
-}
 .nav a{
 	text-decoration:none;
+}
+.nav ul{
+	float: right;
+	display: inline;
+	*zoom: 1;
+}
+.nav li {
+	display: inline;
+	*zoom: 1;
+	font-family: Tahoma, Geneva, sans-serif;
+	margin: 0 5px;
+	font-size: 12px;
 	color: #535353;
+	height:22px;
+	float: left;
 }
-.active {
-	background-color: royalblue;
-	border-radius: 10px;
-	color: white;
+.nav li > span {
+	padding-top: 3px;
+	float: left;
+	display: inline;
+	*zoom: 1;
 }
-.left-nav h4{
-	margin-top: 40px;
+.main-content ul, p{
+	font-size: 12px;
 }
 .left-nav ul{
-	color: gray;
-	line-height: 24px;
+	line-height: 22px;
+	list-style-type: none;
 }
 .left-nav li{
-	color: gray;
-	line-height: 24px;
+	color: #989B93;
+}
+.list li > span{
+	color: dimgray;
+}
+.more-entries{
+	text-align: center;
+	font-weight: bold;
+	background-color: #F2F2F2;
 }
 .featured-project p{
 	color: gray;
