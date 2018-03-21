@@ -1,0 +1,43 @@
+/* Reset */
+@import url("common.css");
+
+body {
+	border-top-color: lightgray;
+	border-top-style: solid;
+	border-top-width: 5px;
+	width: 100%;
+	height: 100vh;
+}
+
+
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+.clear {
+	float: both;
+}
+.hidden {
+	display:none !important;
+}
+.hidden, .invisible{
+	visibility:hidden !important;
+}
+
+
+.page-wrapper {
+	height: 100vh;
+	max-width: 960px;
+	margin: 0 auto;
+	border-top-color: dimgray;
+	border-top-style: solid;
+	border-top-width: 5px;
+}
+
+.active {
+	padding: 5px 15px;
+	border-radius: 10px;
+}
+

@@ -1,0 +1,158 @@
+/* Reset */
+@import url("common.css");
+
+body {
+	border-top-color: lightgray;
+	border-top-style: solid;
+	border-top-width: 5px;
+	width: 100%;
+	height: 100vh;
+}
+
+h3 {
+	color: #535353;
+	font-style: italic;
+	font-size: 28px;
+	margin-bottom: 15px;
+}
+h4 {
+	font-weight: bold;
+	color: #535353;
+	margin-bottom: 15px;
+}
+b {
+	font-weight: bold;
+}
+
+
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+.clear {
+	float: both;
+}
+.hidden {
+	display:none !important;
+}
+.hidden, .invisible{
+	visibility:hidden !important;
+}
+.nav {
+	float: right;
+	width: 50%;
+	padding-bottom: 30px;
+}
+
+
+.page-wrapper {
+	height: 100vh;
+	width: 920px;
+	margin: 0 auto;
+	border-top-color: dimgray;
+	border-top-style: solid;
+	border-top-width: 5px;
+	overflow: hidden;
+}
+.header{
+	float: left;
+	width: 100%;
+	min-height: 50px;
+	padding: 30px 15px 0 15px;
+	border-bottom-color: lightgray;
+	border-bottom-style: double;
+	border-bottom-width: 1px;
+}
+.brand{
+	float: left;
+	width: 50%;
+	padding-bottom: 30px;
+}
+.banner{
+	float: left;
+	width: 100%;
+	min-height: 95px;
+	border-top-color: lightgray;
+	border-top-style: solid;
+	border-top-width: 1px;
+	background-image: url("../images/ex04banner.png");
+	background-repeat: no-repeat;
+}
+.main-content {
+	float: left;
+	padding: 10px 10px;
+	width: 100%;
+}
+.left-nav{
+	float: left;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	width: 250px;
+}
+.featured-project{
+	float: right;
+	width: 650px;
+	padding-top: 40px;
+}
+.footer {
+	float:left;
+	border-top-color: lightgray;
+	border-top-style: solid;
+	border-top-width: 1px;
+	width: 100%;
+	min-height: 35px;
+}
+.footer-notes{
+	width: 40%;
+	float: left;
+}
+.footer-links{
+	width: 40$;
+	float: right;
+}
+
+
+.nav li {
+	display: inline;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	padding: 0 10px;
+}
+.nav a{
+	text-decoration:none;
+	color: #535353;
+}
+.active {
+	background-color: royalblue;
+	border-radius: 10px;
+	color: white;
+}
+.left-nav h4{
+	margin-top: 40px;
+}
+.left-nav ul{
+	color: gray;
+	line-height: 24px;
+}
+.left-nav li{
+	color: gray;
+	line-height: 24px;
+}
+.featured-project p{
+	color: gray;
+	line-height: 28px;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.footer{
+	padding: 20px 0;
+	font-size: 11px;
+	color: gray;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.footer-links li {
+	display: inline;
+}
+.footer-links a{
+	text-decoration:none;
+	color: gray;
+}
