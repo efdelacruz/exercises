@@ -9,35 +9,117 @@
 		<meta name="description" content="HTML Exercise 03">
 		<meta name="robots" content="all">
 		
-		<link rel="stylesheet" href="../css/ex04.css" type="text/css" media="screen, projection">
-		
 		<!-- button color #73BBEC or #73BFF0
 			navbar font Tahoma, Geneva, sans-serif; or "Trebuchet MS", Helvetica, sans-serif
 		-->
 		<!-- Bootstrap CDN -->
 		<!-- 3.3.7 compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<!--link rel="stylesheet" href="http://getbootstrap.com/docs/3.3/examples/blog/blog.css"-->
 
 		<!-- Optional theme -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+		
+		<link rel="stylesheet" href="../css/ex04.css" type="text/css" media="screen, projection">
 	</head>
 	<body>
 		
 		<div class="page-wrapper">
-			<nav class="nav navbar-nav" role="navigation">
-					<ul class="nav nav-pills">
-						<li>
-							<a href="" class="navbar-brand">
-								<img src="../images/ex04title.png">
-							</a>
-						</li>
-						<li role="presentation" class="active"><a href="#">Home</a></li>
-						<li role="presentation"><a href="#about">Work</a></li>
-						<li role="presentation"><a href="#contact">Activity</a></li>
-						<li role="presentation"><a href="#contact">About</a></li>
-						<li role="presentation"><a href="#contact">Notebook</a></li>
-					</ul>
+		
+			<nav class="navbar" role="navigation">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span> 
+						</button>
+						<a class="navbar-brand" href="#">
+							<img src="../images/ex04title.png" />
+						</a>
+					</div>
+					<div class="collapse navbar-collapse" id="navbar-menu">
+						<ul class="nav nav-pills navbar-nav navbar-right">
+							<li role="presentation" class="active"><a href="#">HOME</a></li>
+							<li role="presentation"><a href="#about">WORK</a></li>
+							<li role="presentation"><a href="#contact">ACTIVITY</a></li>
+							<li role="presentation"><a href="#contact">ABOUT</a></li>
+							<li role="presentation"><a href="#contact">NOTEBOOK</a></li>
+						</ul>
+					</div>
+				</div>
 			</nav>
+			
+			<div class="jumbotron">
+				<h2 class="hidden">Welcome to my portfolio. Have fun!</h1>
+				<img src="../images/ex04banner-cropped.png" />
+			</div>
+			
+			<div class="container main-content">
+				<div class="row">
+					<div class="col-md-3">
+						<div class="sidebar">
+							<h4>Recent Notebook Entries</h4>
+							<ul>
+								<li>Mubarak and the 2011 Egyptian Revolution</li>
+								<li>Customize Bash</li>
+								<li>Hover Zoom Effect with JQuery and CSS</li>
+								<li class="more-entries"><a href="#">More Notebook Entries</a></li>
+							</ul>
+						</div>
+						
+						<div class="sidebar">
+							<h4>My Current Favorite</h4>
+							<ul>
+								<li><span>Book:</span> Good to Great</li>
+								<li><span>Music:</span> Bach: The Cello Suites</li>
+								<li><span>Site:</span> Information Aesthetics</li>
+								<li><span>TV Show:</span> The Big Idea</li>
+							</ul>
+						</div>
+						
+						<div class="sidebar">
+							<h4>Digital Life</h4>
+							<ul>
+								<li>ChirpTracker</li>
+								<li>Flickr</li>
+								<li>Vimeo</li>
+								<li>Facebook</li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="col-md-9 featured-project">
+						<h3>Featured Project</h3>
+						<img src="../images/ex04feature.png"/>
+						<p>
+							<b>ChirpTracker</b> is a personal project currently being built to connect birding with techonology and birders with other birders. It is an ever evolving project and I encourage yu to <a href="#">check it out</a> if you're interested in birding and/or nature.
+						</p>
+						<p><a href="#">
+						Take a look at some of my work.
+						</a></p>
+					</div>
+				</div>
+			</div>
+			
+			<footer class="page-footer">
+				<div class="container footer-class">
+					<div class="row py-3 d-flex align-items-center"s>
+						<div class="col-md-6 text-left text-left">
+							<p>Copyright &copy; 2007 - 2012 Greenova Philippines. All rights reserved.</p>
+						</div>
+						<div class="col-md-6 text-right">
+							<ul class="list-unstyled list-inline">
+								<li class="list-inline-item"><a href="#">Home</a></li> /
+								<li class="list-inline-item"><a href="#">Work</a></li> /
+								<li class="list-inline-item"><a href="#">About</a></li> /
+								<li class="list-inline-item"><a href="#">Notebook</a></li> /
+								<li class="list-inline-item"><a href="#">Resume</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</footer>
 		</div>
 		
 		
