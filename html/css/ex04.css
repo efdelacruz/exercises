@@ -12,7 +12,6 @@ body {
 }
 nav {
 	padding: 15px 0 30px 0;
-	font-family: Tahoma, Geneva, sans-serif;
 }
 h3 {
 	color: #535353;
@@ -144,6 +143,9 @@ footer {
 /* SPECIFICS */
 .navbar-brand a:hover{
 	text-decoration:none;
+}
+#navbar-menu ul{
+	font-family: Tahoma, Geneva, sans-serif;
 }
 .main-content ul, p{
 	font-size: 12px;

@@ -1,0 +1,30 @@
+/* Reset */
+@import url("common.css");
+
+body {
+	
+}
+
+/* GENERICS */
+
+
+/* CUSTOM CLASSES */
+
+.hidden {
+	display:none !important;
+}
+.hidden, .invisible{
+	visibility:hidden !important;
+}
+
+
+/* BOOTSTRAP CUSTOMIZATIONS */
+.container{
+	
+}
+
+
+/* STRUCTURE/CONTENT */
+
+
+/* SPECIFICS */
