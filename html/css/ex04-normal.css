@@ -17,6 +17,7 @@ h3 {
 	font-weight: normal;
 }
 h4 {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-weight: bold;
 	color: #535353;
 	margin-bottom: 5px;
@@ -56,6 +57,7 @@ b {
 }
 
 
+/* STRUCTURE/CONTENT */
 .second-top-border{
 	border-top-color: #EEEEEE;
 	border-top-style: solid;
@@ -89,10 +91,6 @@ b {
 	background-color: #7AB7E0;
 	color: white !important;
 	font-weight: bold;
-	*max-width: 60px;
-}
-.inactive {
-	*max-width: 85px;
 }
 .active .button-left-edge {
 	background-image: url("../images/ex04button-left-edge.png");
@@ -136,7 +134,7 @@ b {
 .main-content {
 	float: left;
 	margin-top: 2px;
-	padding: 40px 0;
+	padding: 40px 0 20px 0;
 	width: 100%;
 	border-top-color: #e2e2e2;
 	border-top-style: solid;
@@ -145,7 +143,6 @@ b {
 }
 .left-nav{
 	float: left;
-	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 	width: 220px;
 	padding-right: 30px;
 }
@@ -162,19 +159,42 @@ b {
 	width: 100%;
 	min-height: 35px;
 	clear: both;
+	padding: 12px 0 30px 0;
+	color: gray;
 }
 .footer-notes{
-	width: 40%;
+	width: 50%;
 	float: left;
 }
 .footer-links{
-	width: 40$;
+	width: 50$;
 	float: right;
 }
 
+/* IE7 NAV maxing out width */
+.home {
+	*max-width: 60px;
+}
+.work {
+	*max-width: 58px;
+}
+.activity {
+	*max-width: 75px;
+}
+.about {
+	*max-width: 61px;
+}
+.notebook {
+	*max-width: 85px;
+}
 
+
+/* SPECIFICS */
 .nav a{
 	text-decoration:none;
+}
+.nav a:hover {
+	text-decoration: underline;
 }
 .nav ul{
 	float: right;
@@ -203,9 +223,23 @@ b {
 .left-nav ul{
 	line-height: 22px;
 	list-style-type: none;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 .left-nav li{
 	color: #989B93;
+}
+.more-entries a:hover {
+	text-decoration: underline;
+	color: blue;
+}
+.featured-project a {
+	color: royalblue;
+}
+.featured-project a:hover {
+	text-decoration: none;
+}
+.featured-project a:visited {
+	color: purple;
 }
 .list li > span{
 	color: dimgray;
@@ -220,11 +254,10 @@ b {
 	line-height: 28px;
 	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
-.footer{
-	padding: 20px 0;
-	font-size: 11px;
-	color: gray;
-	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+.footer p, ul {
+	font-size: 10px;
+	font-family: Verdana, Geneva,sans-serif;
+	color: #989B93;
 }
 .footer-links li {
 	display: inline;
@@ -232,4 +265,10 @@ b {
 .footer-links a{
 	text-decoration:none;
 	color: gray;
+}
+.footer-links a:hover {
+	text-decoration: underline;
+}
+.footer-links a:visited {
+	color: purple;
 }
