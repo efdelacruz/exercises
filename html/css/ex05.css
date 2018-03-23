@@ -2,29 +2,175 @@
 @import url("common.css");
 
 body {
-	
+	font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    letter-spacing: -1px;
+}
+h1 {
+	color: #EEEEEE;
+	font-size: 55px;
+	padding-bottom: 25px;
+}
+h2 {
+	font-weight: bold;
+	font-size: 55px;
+	color: #323232;
+	margin-bottom: -13px;
+}
+h3 {
+	font-size: 46px;
+	color: #C1C1C1;
+}
+h4 {
+	color: #EEEEEE;
+	font-size: 36px;
+	border-bottom: 2px dotted #EEEEEE;
+	padding-bottom: 12px;
+	text-align: center;
+}
+h5 {
+	font-weight: normal;
+	font-size: 22px;
+	color: #5A5A5A;
+	margin-bottom: 5px;
+}
+h6 {
+	color: #848484;
+	font-size: 18px;
+	margin-bottom: 5px;
+}
+strong {
+	font-weight: bold;
 }
 
 /* GENERICS */
 
 
 /* CUSTOM CLASSES */
-
 .hidden {
 	display:none !important;
 }
 .hidden, .invisible{
 	visibility:hidden !important;
 }
-
-
-/* BOOTSTRAP CUSTOMIZATIONS */
-.container{
-	
+.ampersand {
+	color: #03C1FF;
+	font-family: Tahoma, Geneva, sans-serif;
 }
 
 
+/* BOOTSTRAP CUSTOMIZATIONS */
+.container {
+	max-width: 960px;
+	padding: 0;
+}
+nav > .container-fluid {
+	padding: 0;
+	max-width: 960px;
+}
+.navbar-inverse {
+	background-color: #333333;
+	padding: 32px 0 39px 0;
+	margin: 0;
+}
+.container .jumbotron {
+	border-bottom: 2px dotted #C1C1C1;
+	background-color: white;
+	margin: 0;
+	padding: 40px 0 30px 0;
+}
+.jumbotron p{
+	color: #5A5A5A;
+    font-weight: 400;
+	font-size: 29px;
+}
+.btn-primary{
+	background-color: #0175A5;
+	border-color: 	#096690;
+	border-width: 3px;
+	border-radius: 0;
+	background-image: none;
+	width: 100%;
+	font-size: 15px;
+}
+.page-footer {
+	padding: 12px 0 30px 0;
+	border-top: 2px dotted #C1C1C1;
+}
+.page-footer p{
+	font-size: 14px;
+	color: #848484;
+}
+
 /* STRUCTURE/CONTENT */
+.services {
+	padding: 40px 0;
+}
+.service {
+	background-color: #01AEF0;
+	margin: 0 14px;
+	padding: 12px 30px 17px 30px;
+    box-shadow: 2px 2px 3px #C1C1C1;
+}
+.features {
+	padding: 35px 0;
+	border-top: 2px dotted #C1C1C1;
+}
+.featured-clients {
+	border-right: 2px dotted #C1C1C1;
+}
+.client {
+	padding-top: 25px;
+}
+.client-info {
+	color: #848484;
+	padding-right: 45px;
+	margin-left: -15px;
+}
+.client-name {
+	margin-top: 12px;
+}	
+.featured-project {
+	padding-left: 45px;
+}
+.project {
+	padding-top: 15px;
+}
+.project-img-preview {
+	width: 90%;
+}
+.project-description {
+	margin-top: 10px;
+}
 
 
 /* SPECIFICS */
+.separator {
+	color: #C1C1C1;
+	margin-top: 16px;
+}
+#navbar-menu a {
+	color: #C1C1C1;
+}
+#navbar-menu a:hover {
+	color: white;
+}
+.service p{
+	color: white;
+	font-size: 15px;
+	padding: 16px 0 14px 0;
+	text-align: center;
+}
+.project p{
+	color: #848484;
+}
+.features a{
+	color: #03C1FF;
+}
+.client-photo {
+	width: 85%;
+	height: 85%;
+}
+.features p{
+	font-size: 13px;
+	letter-spacing: 0;
+}
