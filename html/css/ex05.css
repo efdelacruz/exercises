@@ -4,11 +4,12 @@
 body {
 	font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
     letter-spacing: -1px;
+	padding: 3px 3px 0 3px;
 }
 h1 {
 	color: #EEEEEE;
 	font-size: 55px;
-	padding-bottom: 25px;
+	padding-bottom: 10px;
 }
 h2 {
 	font-weight: bold;
@@ -23,7 +24,7 @@ h3 {
 h4 {
 	color: #EEEEEE;
 	font-size: 36px;
-	border-bottom: 2px dotted #EEEEEE;
+	border-bottom: 3px dotted #EEEEEE;
 	padding-bottom: 12px;
 	text-align: center;
 }
@@ -69,14 +70,23 @@ nav > .container-fluid {
 }
 .navbar-inverse {
 	background-color: #333333;
-	padding: 32px 0 39px 0;
+	padding: 32px 0 24px 0;
 	margin: 0;
 }
-.container .jumbotron {
-	border-bottom: 2px dotted #C1C1C1;
+.navbar-nav {
+	padding-top: 15px;
+}
+.container .jumbotron.header {
+	border-bottom: 3px dotted #C1C1C1;
 	background-color: white;
 	margin: 0;
 	padding: 40px 0 30px 0;
+}
+.container .jumbotron.subheader {
+	border-bottom: 3px dotted #C1C1C1;
+	background-color: white;
+	margin: 0;
+	padding: 18px 0;
 }
 .jumbotron p{
 	color: #5A5A5A;
@@ -94,7 +104,7 @@ nav > .container-fluid {
 }
 .page-footer {
 	padding: 12px 0 30px 0;
-	border-top: 2px dotted #C1C1C1;
+	border-top: 3px dotted #C1C1C1;
 }
 .page-footer p{
 	font-size: 14px;
@@ -108,15 +118,15 @@ nav > .container-fluid {
 .service {
 	background-color: #01AEF0;
 	margin: 0 14px;
-	padding: 12px 30px 17px 30px;
+	padding: 12px 24px 17px 24px;
     box-shadow: 2px 2px 3px #C1C1C1;
 }
 .features {
 	padding: 35px 0;
-	border-top: 2px dotted #C1C1C1;
+	border-top: 3px dotted #C1C1C1;
 }
 .featured-clients {
-	border-right: 2px dotted #C1C1C1;
+	border-right: 3px dotted #C1C1C1;
 }
 .client {
 	padding-top: 25px;
@@ -155,10 +165,12 @@ nav > .container-fluid {
 	color: white;
 }
 .service p{
-	color: white;
-	font-size: 15px;
-	padding: 16px 0 14px 0;
+	color: #EEEEEE;
+	font-size: 14px;
+    padding: 20px 0 3px 0;
+    line-height: 19px;
 	text-align: center;
+    letter-spacing: 0;
 }
 .project p{
 	color: #848484;
