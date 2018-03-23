@@ -32,7 +32,7 @@ h5 {
 	font-weight: normal;
 	font-size: 22px;
 	color: #5A5A5A;
-	margin-bottom: 5px;
+	margin-bottom: -10px;
 }
 h6 {
 	color: #848484;
@@ -101,6 +101,7 @@ nav > .container-fluid {
 	background-image: none;
 	width: 100%;
 	font-size: 15px;
+    color: #EEEEEE;
 }
 .page-footer {
 	padding: 12px 0 30px 0;
@@ -126,7 +127,6 @@ nav > .container-fluid {
 	border-top: 3px dotted #C1C1C1;
 }
 .featured-clients {
-	border-right: 3px dotted #C1C1C1;
 }
 .client {
 	padding-top: 32px;
@@ -141,9 +141,10 @@ nav > .container-fluid {
 }	
 .featured-project {
 	padding-left: 45px;
+	border-left: 3px dotted #C1C1C1;
 }
 .project {
-	padding-top: 15px;
+	padding-top: 25px;
 }
 .project-img-preview {
 	width: 100%;
@@ -174,13 +175,20 @@ nav > .container-fluid {
 }
 .project p{
 	color: #848484;
+    line-height: 19px;
+}
+.more-details{
+	margin-top: 5px;
 }
 .features a{
 	color: #03C1FF;
 }
 .client-photo {
-	width: 85%;
-	height: 85%;
+	width: 90%;
+	height: 90%;
+}
+.client-info p{
+    line-height: 19px;
 }
 .features p{
 	font-size: 13px;
