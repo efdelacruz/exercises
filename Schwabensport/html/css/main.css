@@ -1,0 +1,43 @@
+/* RESET */
+@import url("common.css");
+
+
+/* GENERICS */
+body {
+	font-family: "Open Sans", sans-serif;
+}
+header {
+	background-color: #FFD364;
+	padding: 0 60px;
+}
+h1 {
+	font-weight: bold;
+	color: #0A83AE;
+}
+
+
+/* BOOTSTRAP CUSTOMIZATIONS */
+.fa {
+	color: white;
+	font-size: 1.5em;
+	padding: 0;
+}
+
+
+/* STRUCTURE/CONTENT */
+.splash-banner {
+	background-image: url("../images/splash-banner.png");
+	height: 792px;
+	padding: 0 45px;
+}
+
+
+/* SPECIFICS */
+.social-icons li>a:hover {
+	background-color: orange;
+}
+.menu li>a {
+	color: black;
+	font-weight: bold;
+	font-size: 19px;
+}
