@@ -1,6 +1,10 @@
 /* RESET */
 @import url("common.css");
 
+@font-face {
+	font-family: OpenSansExtraBold;
+	src: url('../fonts/open-sans/OpenSans-ExtraBold.ttf');
+}
 
 /* GENERICS */
 body {
@@ -14,7 +18,58 @@ h1 {
 	font-weight: bold;
 	color: #0A83AE;
 }
+h3 {
+	font-size: 32px;
+	font-weight: 800;
+	text-align: center;
+	color: white;
+	padding: 25px 0 60px 0;
+}
+h4 {
+	font-weight: 800;
+	padding: 15px 0 30px 0;
+	font-size: 28px;
+	text-align: center;
+	color: #0785B8;
+}
+h5 {
+	color: white;
+	font-weight: 800;
+	background-color: #0686B3;
+	padding: 10px 0;
+	text-align: center;
+}
+h6 {
+	font-weight: 800;
+	padding-bottom: 20px;
+	font-size: 13px;
+}
+b {
+	font-weight: bold;
+}
+footer {
+	border-top: 1px solid #353535;
+}
 
+/* CUSTOM CLASSES */
+.hidden {
+	display:none !important;
+}
+.hidden, .invisible{
+	visibility:hidden !important;
+}
+.no-margin {
+	margin: 0;
+}
+.no-padding {
+	padding:0;
+}
+.padding-right {
+	padding: 0 15px 0 0;
+}
+.padding-left {
+	padding: 0 0 0 15px;
+}
 
 /* BOOTSTRAP CUSTOMIZATIONS */
 .fa {
@@ -22,15 +77,276 @@ h1 {
 	font-size: 1.5em;
 	padding: 0;
 }
+.player-info>.row{
+	width: 100%;
+}
 
 
 /* STRUCTURE/CONTENT */
 .splash-banner {
-	background-image: url("../images/splash-banner.png");
+	background: url("../images/splash-banner.png") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 	height: 792px;
 	padding: 0 45px;
 }
+.teampartnerinnen-banner {
+	background: url("../images/team-partner.png") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	height: 608px;
+	padding: 0 45px;
+}
+.a-kader-banner {
+	background: url("../images/a-squad-banner.png") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	height: 284px;
+	padding: 0 45px;
+}
+.goal-banner {
+	background: url("../images/goal-banner.png") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	height: 342px;
+	padding: 0 45px;
+}
+.invite-banner {
+	background: url("../images/invite-banner.png") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	height: 342px;
+	padding: 0 45px;
+}
 
+
+.player-info {
+	padding: 0;
+	width: 100%;
+}
+.player-info>.row {
+	margin:0;
+}
+.player-info table{
+	font-size: 15px;
+}
+.chantal {
+	padding-left: 165px;
+	overflow: hidden;
+	width: 100%;
+}
+.julia {
+	padding-right: 165px;
+	overflow: hidden;
+	width: 100%;
+}
+.player-info-table>tbody>tr>td {
+	border-top: none;
+	border-bottom: 1px solid #0686B3;
+}
+.motto {
+	padding-bottom: 20px;
+}
+.motto p{
+	color: #0686B3;
+	font-style: italic;
+	font-weight: 800;
+	font-size: 16px;
+}
+
+
+.success-timeline {
+	color: #0785B8;
+	padding: 0 125px 30px 125px;
+}
+.success-timeline h4{
+	text-align: center;
+}
+.i-icon {
+	background-image: url("../images/timeline-dot.png");
+}
+.time {
+	color: #0785B8;
+	position: absolute;
+	font-size: 14px;
+	font-weight: bold;
+}
+.time-left{
+	margin-left: -82px;
+    margin-top: 11px;
+}
+
+@media screen and (min-width: 769px) {
+	
+.time-right{
+	margin-left: 500px;
+    margin-top: 11px;
+}
+
+}
+@media screen and (max-width: 1199px) {
+	
+.time-right{
+	margin-left: 405px;
+    margin-top: 11px;
+}
+
+}
+@media screen and (max-width: 990px) {
+	
+.time-right{
+	margin-left: 305px;
+    margin-top: 11px;
+}
+
+}
+@media screen and (max-width: 768px) {
+	
+.time-right{
+	margin-left: -91px;
+    margin-top: 11px;
+}
+
+}
+
+
+.turniere {
+	padding-bottom: 30px;
+}
+.turniere h4{
+	padding: 28px 0;
+	text-align: center;
+	color: #0785B8;
+}
+.turniere>.container>.row{
+	padding: 0 110px 0 110px;
+}
+.turniere table{
+	font-size: 15px;
+}
+.turniere-table>tbody>tr>td {
+	border-top: none;
+	border-bottom: 1px solid #0785B8;
+	padding: 4px;
+}
+.table-hover > tbody > tr:hover {
+  background-color: beige;
+}
+
+
+.social-media-placeholder{
+	background: url("../images/social-media-related.png") no-repeat center center;
+	height: 950px;
+}
+
+
+.partners-row {
+	background: url("../images/partners-row.png") no-repeat center center;
+	height:130px;
+}
+.partner-info {
+	text-align: center;
+}
+.ansprechpartner {
+	padding: 50px 0;
+}
+.ansprechpartner b {
+	font-size: 16px;
+	color: black;
+}
+
+
+.kontakt {
+	background-color: #353535;
+	color: white;
+}
+.kontakt h3 {
+	color: white;
+}
+.contact-row {
+	padding-bottom: 30px;
+}
+.address {
+	padding-bottom: 20px;
+}
+.fax {
+	padding-bottom: 20px;
+}
+.email {
+	padding-bottom: 20px;
+}
+.email-contact {
+	color: lightpink;
+}
+.contact-details {
+	padding-bottom: 30px;
+}
+.contact-details p, b, a {
+	font-size: 12px;
+}
+.contact-footnotes p{
+	font-size: 11px;
+}
+.placeholder-ie9{
+}
+.contact-form>form>.row {
+	padding-bottom: 15px;
+}
+.contact-form input {
+	border-radius: 0;
+	font-size: 11px;
+}
+.contact-form textarea {
+	border-radius: 0;
+	font-size: 11px;
+}
+.contact-form a{
+	padding: 12px 0;
+	font-weight: 800;
+}
+.send-btn {
+	background-color: #FAD662;
+	color: #353535;
+	font-weight: bold;
+	border-radius: 0;
+}
+#map-container {
+	height: 223px;
+	width: 100%;
+}
+
+
+.maps-placeholder{
+	margin-top:30px;
+	background: url("../images/maps.png") no-repeat center center;
+	height:222px;
+}
+
+
+.footer-class {
+	padding: 12px 60px 30px 60px;
+}
+.footer-class p{
+	font-size: 14px;
+	color: #353535;
+}
+.footer-class li{
+	font-weight: bold;
+	color: #353535;
+}
+.footer-class a:link{
+	color: #353535;
+}
 
 /* SPECIFICS */
 .social-icons li>a:hover {
