@@ -158,6 +158,10 @@ h3 {
 .weiterlesen:hover {
 	background-color: royalblue;
 }
+.weiterlesen a:link {
+	text-decoration: none;
+	color: white;
+}
 .weiterlesen a:hover {
 	text-decoration: none;
 	color: white;
