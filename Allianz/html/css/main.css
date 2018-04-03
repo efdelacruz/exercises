@@ -1,7 +1,32 @@
 /* RESET */
 @import url("common.css");
 
+@font-face {
+	font-family: GermanoRegular;
+	src: url('../fonts/germano/Germano-Regular.ttf');
+	src: url('../fonts/germano/Germano-Regular.ttf?#iefix') format('truetype'), /* IE6-IE8 */
+}
+@font-face {
+	font-family: GermanoBold;
+	src: url('../fonts/germano/Germano-Bold.ttf');
+	src: url('../fonts/germano/Germano-Bold.ttf?#iefix') format('truetype'), /* IE6-IE8 */
+}
+@font-face {
+	font-family: GermanoRegular;
+	src: url('../fonts/germano/Germano-Regular.woff');
+}
+@font-face {
+	font-family: GermanoBold;
+	src: url('../fonts/germano/Germano-Bold.woff');
+}
 
+body {
+	font-family: "Open Sans", sans-serif;
+}
+h3 {
+	font-family: GermanoBold;
+	font-size: 19px;
+}
 footer {
 	min-height: 420px;
 	background-image: url("../images/footer-bg-clean.png");
@@ -16,6 +41,18 @@ footer {
 .border-bottom {
 	border-bottom: 1px solid white;
 }
+.lr-padding {
+	padding-left: 80px;
+	padding-right: 80px;
+}
+.odd-right {
+	background-color: #014b96;
+}
+
+
+.btn {
+	padding: 0;
+}
 
 
 .side-nav {
@@ -27,6 +64,8 @@ footer {
 	background-image: url("../images/navbar-bg.png");
 	min-height: 130px;
 	background-repeat: repeat-x;
+	font-family: GermanoRegular, sans-serif;
+	font-size: 24px;
 }
 .carousel-wrapper {
 	background-color: #014b92;
@@ -42,7 +81,7 @@ footer {
 	height: 500px;
 }
 .game-records {
-	min-height: 480px;
+	background-color: #014b92;
 }
 .players {
 	width: 100%;
@@ -61,16 +100,29 @@ footer {
 }
 
 
-
 .spielplan {
 	background-color: #014b92;
+	color: white;
+	padding: 30px 15px 30px 80px;
+}
+.spielplan-table {
+	color: white;
+	margin-top: 20px;
+}
+.spielplan-btn {
+	margin-top: 5px;
 }
 .damen-saison {
-	
+	padding: 30px 80px 30px 15px;
+	background-color: #ffffff;
+}
+.damen-saison-table {
+	color: black;
+	font-size: 13px;
+	margin-top: 20px;
 }
 .article {
 	border-bottom: 1px solid white;
-	min-height: 345px;
 }
 .ruckblick-banner {
 	background-image: url("../images/ruckblick-banner.png");
@@ -87,4 +139,75 @@ footer {
     -o-background-size: cover;
     background-size: cover;
 	min-height: 360px;
+}
+
+
+.menu>div>div>ul {
+	padding-top: 60px;
+}
+.menu>div>div>ul>li>a {
+	padding: 15px 7px 37px 7px;
+	color: black;
+}
+.menu>div>div>ul>li>a:hover {
+	color: #014b92;
+	background-color: inherit;
+}.menu>div>div>ul>li.active>a {
+	color: #014b92;
+	background-color: white;
+}
+
+.spielplan a {
+	background-color: white;
+	color: #014b92;
+	padding: 7px;
+	text-align: center;
+	font-size: 14px;
+}
+.spielplan-table>thead {
+	font-family: GermanoBold;
+	font-size: 14px;
+}
+.spielplan-table>thead>tr {
+    background: #4d81b3;
+}
+.spielplan-table>thead>tr:nth-child(4n+1), .spielplan-table>thead>tr:nth-child(4n+2) {
+    background: inherit;
+}
+.spielplan-table>thead>tr>th, .spielplan-table>tbody>tr>td {
+	border: 0;
+}
+.spielplan-table>tbody>tr>td {
+	font-weight: bold;
+	font-size: 14px;
+	padding: 4px;
+}
+.spielplan-table>tbody>tr.tr-note>td{
+	font-weight: normal;
+	font-style: italic;
+	font-size: 12px;
+}
+.damen-saison h3 {
+	color: #014b92;
+}
+.damen-saison a {
+	background-color: #014b92;
+	color: white;
+	padding: 7px;
+	text-align: center;
+	font-size: 14px;
+}
+.damen-saison-table>tbody>tr:nth-of-type(odd) {
+  background-color: #E6EDF3;
+}
+.damen-saison-table>thead {
+	font-family: GermanoBold;
+	font-size: 14px;
+}
+.damen-saison-table>thead>tr>th, .spielplan-table>tbody>tr>td {
+	border: 0;
+}
+.damen-saison-table>tbody>tr>td {
+	padding: 4px;
+	border-top: 1px solid #E8EDF1;
 }

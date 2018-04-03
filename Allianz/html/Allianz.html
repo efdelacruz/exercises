@@ -15,16 +15,28 @@
 		<!-- Optional theme -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 		
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 		<link rel="stylesheet" href="css/main.css" type="text/css" media="screen, projection">
 	</head>
 	
 	<body>
 		<header class="border-bottom">
 			<nav class="navber menu" role="navigation">
-				<div class="container-fluid">
+				<div class="container-fluid lr-padding">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="navbar-menu">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="#">
+							<h1 class="hidden">Stuttgart</h1>
+							<img src="images/logo.png" />
+						</a>
+					</div>
 					<div class="collapse navbar-collapse" id="navbar-menu">
-						<ul class="navbar-nav nav menu">
-							<li><a href="#">News</a></li>
+						<ul class="navbar-nav nav">
+							<li class="active"><a href="#">News</a></li>
 							<li><a href="#">Multimedia</a></li>
 							<li><a href="#">Ticket&amp;Spielplan</a></li>
 							<li><a href="#">Team</a></li>
@@ -43,50 +55,218 @@
 		
 		</section>
 		
-		<section class="splash-banner border-bottom">
+		<section id="welcome" class="splash-banner border-bottom lr-padding">
+			<p class="hidden">ECHTE EMOTIONEN</p>
 		</section>
 		
-		<section class="game-records border-bottom">
+		<section id="tables" class="game-records border-bottom container-fluid">
 			<div class="row">
 				<div class="col-md-7 spielplan">
-				
+					<h3>Spielplan: VBL - Saison 2016/17</h3>
+					<table class="table table-condensed spielplan-table">
+						<thead class="text-uppercase">
+							<tr>
+								<th>Team 1</th>
+								<th>Team 2</th>
+								<th>Spielstand</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>USC Münster</td>
+								<td>Allianz MTV Stuttgart</td>
+								<td>0:3</td>
+							</tr>
+							<tr class="tr-note">
+								<td colspan="3">
+									» Sporthalle Berg Fidel, Am Berg Fidel 51, 48153 Münster - 23.10.2016, 14:30 Uhr
+								</td>
+							</tr>
+							<tr>
+								<td>Allianz MTV Stuttgart</td>
+								<td>Rote Raben Vilsbiburg</td>
+								<td>3:0</td>
+							</tr>
+							<tr class="tr-note">
+								<td colspan="3">
+									» SCHARRena Stuttgart, Fritz-Walter-Weg 5, 70732 Stuttgart - 28.10.2016, 19:00 Uhr
+								</td>
+							</tr>
+							<tr>
+								<td>Ladies in Black Aachen</td>
+								<td>Allianz MTV Stuttgart</td>
+								<td>1:3</td>
+							</tr>
+							<tr class="tr-note">
+								<td colspan="3">
+									» Sporthalle Berg Fidel, Am Berg Fidel 51, 48153 Münster - 23.10.2016, 14:30 Uhr
+								</td>
+							</tr>
+							<tr>
+								<td>Allianz MTV Stuttgart</td>
+								<td>VfB 91 Suhl</td>
+								<td>3:1</td>
+							</tr>
+							<tr class="tr-note">
+								<td colspan="3">
+									» Sporthalle Berg Fidel, Am Berg Fidel 51, 48153 Münster - 23.10.2016, 14:30 Uhr
+								</td>
+							</tr>
+							<tr>
+								<td>VCO Berlin</td>
+								<td>Allianz MTV Stuttgart</td>
+								<td>-:-</td>
+							</tr>
+							<tr class="tr-note">
+								<td colspan="3">
+									» SCHARRena Stuttgart, Fritz-Walter-Weg 5, 70732 Stuttgart - 28.10.2016, 19:00 Uhr
+								</td>
+							</tr>
+							<tr>
+								<td>SC Potsdam</td>
+								<td>Allianz MTV Stuttgart</td>
+								<td>-:-</td>
+							</tr>
+							<tr class="tr-note">
+								<td colspan="3">
+									» SCHARRena Stuttgart, Fritz-Walter-Weg 5, 70732 Stuttgart - 28.10.2016, 19:00 Uhr
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="row">
+						<div class="col-md-7"></div>
+						<div class="col-md-5 btn spielplan-btn">
+							<a href="#">Zu den vollständigen Spielplan</a>
+						</div>
+					</div>
 				</div>
 				<div class="col-md-5 damen-saison">
-				
+					<h3>Tabelle der 1. Buundesliga Damen Saison 2016/17</h3>
+					<table class="table table-condensed damen-saison-table">
+						<thead class="text-uppercase">
+							<tr>
+								<th>Platz</th>
+								<th>Mannschaft</th>
+								<th>Spiele</th>
+								<th>Punkte</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>Schweriner SC</td>
+								<td>4</td>
+								<td>12</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>Allianz MTV Stuttgart</td>
+								<td>4</td>
+								<td>12</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>VC Wiesbaden</td>
+								<td>5</td>
+								<td>10</td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td>Dresdner SC</td>
+								<td>4</td>
+								<td>8</td>
+							</tr>
+							<tr>
+								<td>5</td>
+								<td>SC Potsdam</td>
+								<td>4</td>
+								<td>6</td>
+							</tr>
+							<tr>
+								<td>6</td>
+								<td>VfB 91 Suhl</td>
+								<td>5</td>
+								<td>6</td>
+							</tr>
+							<tr>
+								<td>7</td>
+								<td>USC Münster</td>
+								<td>4</td>
+								<td>5</td>
+							</tr>
+							<tr>
+								<td>8</td>
+								<td>Schwarz-Weiß München</td>
+								<td>4</td>
+								<td>4</td>
+							</tr>
+							<tr>
+								<td>9</td>
+								<td>Rote Raben Vi...</td>
+								<td>3</td>
+								<td>3</td>
+							</tr>
+							<tr>
+								<td>10</td>
+								<td>Ladies in Bla...</td>
+								<td>4</td>
+								<td>3</td>
+							</tr>
+							<tr>
+								<td>11</td>
+								<td>Köpenicker SC...</td>
+								<td>4</td>
+								<td>3</td>
+							</tr>
+							<tr>
+								<td>12</td>
+								<td>VCO Berlin</td>
+								<td>5</td>
+								<td>3</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="row">
+						<div class="col-md-6"></div>
+						<div class="col-md-6 btn">
+							<a href="#">Zu der vollständigen Tabelle</a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
 		
-		<section class="players border-bottom">
+		<section id="players" class="players-partners">
+			<div class="players border-bottom lr-padding">
+			</div>
+			<div class="partners border-bottom lr-padding">
 		
+			</div>
 		</section>
 		
-		<section class="partners border-bottom">
-		
-		</section>
-		
-		<section class="articles">
+		<section id="articles" class="articles lr-padding">
 			<div class="article row">
 				<div class="col-md-5 article-img-preview">
-				
+					<img class="img-responsive" src="images/thumnail-article-1.png"/>
 				</div>
-				<div class="col-md-7 article-content-preview">
+				<div class="col-md-7 article-content-preview odd-right">
 					
 				</div>
 			</div>
 			<div class="article row">
 				<div class="col-md-7 article-content-preview">
-					
+				
 				</div>
 				<div class="col-md-5 article-img-preview">
-				
+					<img class="img-responsive" src="images/thumbnail-article-2.png"/>
 				</div>
 			</div>		
 			<div class="article row">
 				<div class="col-md-5 article-img-preview">
-				
+					<img class="img-responsive" src="images/thumbnail-article-3.png"/>
 				</div>
-				<div class="col-md-7 article-content-preview">
+				<div class="col-md-7 article-content-preview odd-right">
 					
 				</div>
 			</div>	
@@ -95,24 +275,24 @@
 					
 				</div>
 				<div class="col-md-5 article-img-preview">
-				
+					<img class="img-responsive" src="images/thumbnail-article-4.png"/>
 				</div>
 			</div>		
 		</section>
 		
-		<section class="rublick-gallery border-bottom">
+		<section id="ruckblick" class="rublick-gallery border-bottom">
 			<div class="ruckblick-banner">
 			</div>
-			<div class="ruckblick-gallery">
+			<div class="ruckblick-gallery lr-padding">
 				
 			</div>
 		</section>
 		
-		<section class="videos-ad border-bottom">
+		<section id="media" class="videos-ad border-bottom lr-padding">
 		
 		</section>
 		
-		<footer>
+		<footer class="lr-padding">
 		
 		</footer>
 	</body>
