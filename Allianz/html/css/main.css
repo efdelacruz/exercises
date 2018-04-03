@@ -1,2 +1,90 @@
 /* RESET */
 @import url("common.css");
+
+
+footer {
+	min-height: 420px;
+	background-image: url("../images/footer-bg-clean.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+
+.border-bottom {
+	border-bottom: 1px solid white;
+}
+
+
+.side-nav {
+	
+}
+
+.menu {
+	width: 100%;
+	background-image: url("../images/navbar-bg.png");
+	min-height: 130px;
+	background-repeat: repeat-x;
+}
+.carousel-wrapper {
+	background-color: #014b92;
+	width: 100%;
+	min-height: 224px;
+}
+.splash-banner {
+	background-image: url("../images/real-emotions-banner.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	height: 500px;
+}
+.game-records {
+	min-height: 480px;
+}
+.players {
+	width: 100%;
+	min-height: 469px;
+	background-image: url("../images/carousel-players.png");
+}
+.partners {
+	width: 100%;
+	min-height: 129px;
+	background-image: url("../images/partners.png");
+}
+.videos-ad {
+	background-image: url("../images/videos-bg.png");
+	background-repeat: repeat-x;
+	min-height: 840px;
+}
+
+
+
+.spielplan {
+	background-color: #014b92;
+}
+.damen-saison {
+	
+}
+.article {
+	border-bottom: 1px solid white;
+	min-height: 345px;
+}
+.ruckblick-banner {
+	background-image: url("../images/ruckblick-banner.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	min-height: 530px;
+}
+.ruckblick-gallery {
+	background-image: url("../images/ruckblick-gallery-bg.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	min-height: 360px;
+}
