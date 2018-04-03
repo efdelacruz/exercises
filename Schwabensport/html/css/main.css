@@ -70,6 +70,10 @@ footer {
 .padding-left {
 	padding: 0 0 0 15px;
 }
+.gray {
+	background-color: #777777;
+	color: white;
+}
 
 /* BOOTSTRAP CUSTOMIZATIONS */
 .fa {
@@ -77,12 +81,9 @@ footer {
 	font-size: 1.5em;
 	padding: 0;
 }
-.player-info>.row{
-	width: 100%;
-}
 
 
-/* STRUCTURE/CONTENT */
+/* BANNERS */
 .splash-banner {
 	background: url("../images/splash-banner.png") no-repeat center center;
     -webkit-background-size: cover;
@@ -130,12 +131,14 @@ footer {
 }
 
 
+/* PLAYER PROFILE SECTION */
 .player-info {
 	padding: 0;
 	width: 100%;
 }
 .player-info>.row {
 	margin:0;
+	width: 100%;
 }
 .player-info table{
 	font-size: 15px;
@@ -165,6 +168,7 @@ footer {
 }
 
 
+/* TIMELINE SECTION */
 .success-timeline {
 	color: #0785B8;
 	padding: 0 125px 30px 125px;
@@ -220,6 +224,7 @@ footer {
 }
 
 
+/* TURNIERE SECTION */
 .turniere {
 	padding-bottom: 30px;
 }
@@ -244,12 +249,47 @@ footer {
 }
 
 
+/* SOCIAL MEDIA SECTION */
+.social-media {
+	padding-top: 20px;
+	padding-bottom: 60px;
+}
+.social-media-icons {
+	width: 100%;
+	text-align: center;
+	padding-bottom: 20px;
+}
+.social-media-icons li{
+	display: inline-block;
+}
+.social-media-icons img{
+	
+}
+.social-media-icons>ul>li>a>i{
+	padding: 8px;
+}
+.fa-all {
+	font-weight: bold;
+	font-size: 16px;
+	padding: 6px;
+}
+.social-media-posts {
+	max-width: 750px;
+}
+.fb-post {
+	padding: 7px 15px;
+}
+.fb-post img {
+	border: 1px solid lightgray;
+    box-shadow: 2px 2px 3px #C1C1C1;
+}
 .social-media-placeholder{
 	background: url("../images/social-media-related.png") no-repeat center center;
 	height: 950px;
 }
 
 
+/* PARTNERS SECTION */
 .partners-row {
 	background: url("../images/partners-row.png") no-repeat center center;
 	height:130px;
@@ -266,6 +306,7 @@ footer {
 }
 
 
+/* CONTACT SECTION */
 .kontakt {
 	background-color: #353535;
 	color: white;
