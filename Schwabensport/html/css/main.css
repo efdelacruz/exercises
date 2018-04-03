@@ -394,7 +394,11 @@ footer {
 	background-color: orange;
 }
 .menu li>a {
-	color: black;
+	color: white;
 	font-weight: bold;
 	font-size: 19px;
+}
+.menu>li>a:hover{
+	background-color: inherit;
+	border-bottom: 2px solid yellow;
 }
