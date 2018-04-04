@@ -12,7 +12,6 @@ body {
 }
 header {
 	background-color: #FFD364;
-	padding: 0 60px;
 }
 h1 {
 	font-weight: bold;
@@ -80,6 +79,19 @@ footer {
 	color: white;
 	font-size: 1.5em;
 	padding: 0;
+}
+.navbar-toggle {
+	margin-top: 15px;
+	border-color: darkgoldenrod;
+	background-color: orange;
+	padding: 0 8px 8px 8px;
+}
+.navbar-toggle:hover,
+.navbar-toggle:focus {
+	background-color: gold;
+}
+.navbar-toggle .icon-bar {
+	background-color: darkgoldenrod;
 }
 
 
@@ -421,14 +433,35 @@ footer {
 /* PHONES */
 @media screen and (max-width: 768px) {
 	
+header {
+	padding: 0 15px;
+}
+h1 {
+	font-size: 14px;
+}
+nav>div.container-fluid {
+	padding: 0;
+}
+.navbar-brand {
+	max-width: 260px;
+}
+	
 }
 
 /* TABLETS & LAPTOPS */
 @media screen and (min-width: 769px) {
 	
+header {
+	padding: 45px;
+}
+	
 }
 
 /* LAPTOPS & DESKTOP MONITORS */
 @media screen and (min-width: 1200px) {
+	
+header {
+	padding: 0 60px;
+}
 	
 }
