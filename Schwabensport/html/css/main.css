@@ -94,6 +94,7 @@ footer {
 	padding: 0 45px;
 }
 .teampartnerinnen-banner {
+	/*
 	background: url("../images/team-partner.png") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -101,8 +102,10 @@ footer {
     background-size: cover;
 	height: 608px;
 	padding: 0 45px;
+	*/
 }
 .a-kader-banner {
+	/*
 	background: url("../images/a-squad-banner.png") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -110,8 +113,10 @@ footer {
     background-size: cover;
 	height: 284px;
 	padding: 0 45px;
+	*/
 }
 .goal-banner {
+	/*
 	background: url("../images/goal-banner.png") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -119,8 +124,10 @@ footer {
     background-size: cover;
 	height: 342px;
 	padding: 0 45px;
+	*/
 }
 .invite-banner {
+	/*
 	background: url("../images/invite-banner.png") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -128,6 +135,7 @@ footer {
     background-size: cover;
 	height: 342px;
 	padding: 0 45px;
+	*/
 }
 
 
@@ -279,6 +287,9 @@ footer {
 .fb-post {
 	padding: 7px 15px;
 }
+.fb-post.col-md-12 {
+	text-align: center;
+}
 .fb-post img {
 	border: 1px solid lightgray;
     box-shadow: 2px 2px 3px #C1C1C1;
@@ -401,4 +412,23 @@ footer {
 .menu>li>a:hover{
 	background-color: inherit;
 	border-bottom: 2px solid yellow;
+}
+
+/*
+	* MEDIA QUERIES
+*/
+
+/* PHONES */
+@media screen and (max-width: 768px) {
+	
+}
+
+/* TABLETS & LAPTOPS */
+@media screen and (min-width: 769px) {
+	
+}
+
+/* LAPTOPS & DESKTOP MONITORS */
+@media screen and (min-width: 1200px) {
+	
 }

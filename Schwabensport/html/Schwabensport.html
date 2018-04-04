@@ -31,7 +31,8 @@
 			<nav class="navber" role="navigation">
 				<div class="container-fluid">
 					<div class="navbar-header">
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="navbar-menu">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu" aria-expanded="false" aria-controls="navbar">
++							<span class="sr-only">Toggle navigation</span>
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
@@ -42,6 +43,7 @@
 					</div>
 					<div class="collapse navbar-collapse" id="navbar-menu">
 						<ul class="navbar-nav nav navbar-right social-icons">
+						
 							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
 							<li><a href="#"><i class="fa fa-youtube"></i></a></li>
 							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -53,6 +55,7 @@
 		</header>
 		
 		<section class="splash-banner">
+			<!--img class="img-responsive" src="images/splash-banner.png" /-->
 			<h2 class="hidden">Auf Dem Weg Zur Weltspitze</h2>
 			<h3 class="hidden">Beach Volleyball Team</h3>
 			<h3 class="hidden">Chantal Laboreur and Julia Sude</h3>
@@ -75,8 +78,9 @@
 		<section class="teampartnerinnen">
 			<div class="teampartnerinnen-banner">
 				<h4 class="hidden">Teampartnerinnen Seit 2013</h4>
+				<img class="img-responsive" src="images/team-partner.png" />
 			</div>
-			<div class="container player-info">
+			<div class="container-fluid player-info">
 				<div class="row">
 					<div class="col-md-6 table-responsive padding-right">
 						<h5 class="player text-uppercase chantal">Chantal Laboreur</h5>
@@ -185,8 +189,9 @@
 				<div class="a-kader-banner">
 					<h3 class="hidden">Seit 2015 Sind Wir Im A-Kader</h3>
 					<h2 class="hidden">Der Deautschen Nationalmanschaft</h2>
+					<img class="img-responsive" src="images/a-squad-banner.png" />
 				</div>
-				<div class="container success-timeline">
+				<div class="container-fluid success-timeline">
 					<div class="row">
 						<h4 class="text-uppercase">Unsere Gemeinsame Erfolge</h4>
 						<div class="timeline timeline-line-solid">
@@ -273,8 +278,9 @@
 				<div class="goal-banner">
 					<h3 class="hidden">Unser Gemeinsames Ziel:</h3>
 					<h2 class="hidden">Die Olympieschen Spiele in Tokio 2020</h2>
+					<img class="img-responsive" src="images/goal-banner.png" />
 				</div>
-				<div class="container">
+				<div class="container-fluid">
 					<div class="row">
 						<h4 class="text-uppercase">Turniere 2017</h4>
 						<table class="table table-condensed table-hover turniere-table">
@@ -429,8 +435,9 @@
 					<h3 class="hidden">Kommen sie Auch in Unser Team -</h3>
 					<h2 class="hidden">Werden Sie Unser Partner Und</h2>
 					<h2 class="hidden">Somit Teil Unserer Erfolgsgeschichte</h2>
+					<img class="img-responsive" src="images/invite-banner.png" />
 				</div>
-				<div class="container partner-info">
+				<div class="container-fluid partner-info">
 					<div class="row">
 						<h4 class="text-uppercase">Partner Werden</h4>
 					</div>
@@ -547,7 +554,7 @@
 			</section>
 			
 			<footer>
-				<div class="container footer-class">
+				<div class="container-fluid footer-class">
 					<div class="row py-3 d-flex align-items-center"s>
 						<div class="col-md-6 text-left text-left">
 							<p>&copy; 2017 SchwabenSport Management. Alle Rechte vorbehalten.</p>
