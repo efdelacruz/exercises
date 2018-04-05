@@ -182,40 +182,6 @@ footer {
 	font-weight: bold;
 }
 
-@media screen and (min-width: 769px) {
-	
-	.time-right{
-		margin-left: 500px;
-		margin-top: 11px;
-	}
-	
-}
-@media screen and (max-width: 1199px) {
-	
-	.time-right{
-		margin-left: 405px;
-		margin-top: 11px;
-	}
-	
-}
-@media screen and (max-width: 990px) {
-	
-	.time-right{
-		margin-left: 305px;
-		margin-top: 11px;
-	}
-	
-}
-@media screen and (max-width: 768px) {
-	
-	.time-right{
-		margin-left: -91px;
-		margin-top: 11px;
-	}
-	
-}
-
-
 /* TURNIERE SECTION */
 .turniere h4{
 	text-align: center;
@@ -369,7 +335,7 @@ footer {
 /*
 	*	PHONES
 */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 	
 	header {
 		padding: 0 15px;
@@ -406,7 +372,7 @@ footer {
 	
 	
 	.splash-banner {
-		height: 350px;
+		height: 250px;
 		padding: 0 15px;
 	}
 	#navbar-menu {
@@ -454,6 +420,10 @@ footer {
 	.time-left{
 		margin-left: -91px;
 		margin-top: 12px;
+	}
+	.time-right{
+		margin-left: -91px;
+		margin-top: 11px;
 	}
 	.success-timeline>.row>.timeline>.timeline-item>.timeline-event:before {
 		left: -9px !important;
@@ -509,7 +479,7 @@ footer {
 /*
 	*	TABLETS & LAPTOPS
 */
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
 	
 	header {
 		padding: 0 45px;
@@ -573,6 +543,10 @@ footer {
 	}
 	.time-left{
 		margin-left: -82px;
+		margin-top: 11px;
+	}
+	.time-right{
+		margin-left: 387px;
 		margin-top: 11px;
 	}
 	
@@ -683,6 +657,10 @@ footer {
 	}
 	.time-left{
 		margin-left: -82px;
+		margin-top: 11px;
+	}
+	.time-right{
+		margin-left: 557px;
 		margin-top: 11px;
 	}
 	
