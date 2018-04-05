@@ -18,16 +18,12 @@ h1 {
 	color: #0A83AE;
 }
 h3 {
-	font-size: 32px;
 	font-weight: 800;
 	text-align: center;
 	color: white;
-	padding: 25px 0 60px 0;
 }
 h4 {
 	font-weight: 800;
-	padding: 15px 0 30px 0;
-	font-size: 28px;
 	text-align: center;
 	color: #0785B8;
 }
@@ -41,7 +37,6 @@ h5 {
 h6 {
 	font-weight: 800;
 	padding-bottom: 20px;
-	font-size: 13px;
 }
 b {
 	font-weight: bold;
@@ -62,12 +57,6 @@ footer {
 }
 .no-padding {
 	padding:0;
-}
-.padding-right {
-	padding: 0 15px 0 0;
-}
-.padding-left {
-	padding: 0 0 0 15px;
 }
 .gray {
 	background-color: #777777;
@@ -102,51 +91,49 @@ footer {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-	height: 792px;
-	padding: 0 45px;
 }
 .teampartnerinnen-banner {
 	/*
-	background: url("../images/team-partner.png") no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-	height: 608px;
-	padding: 0 45px;
+		background: url("../images/team-partner.png") no-repeat center center;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		height: 608px;
+		padding: 0 45px;
 	*/
 }
 .a-kader-banner {
 	/*
-	background: url("../images/a-squad-banner.png") no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-	height: 284px;
-	padding: 0 45px;
+		background: url("../images/a-squad-banner.png") no-repeat center center;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		height: 284px;
+		padding: 0 45px;
 	*/
 }
 .goal-banner {
 	/*
-	background: url("../images/goal-banner.png") no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-	height: 342px;
-	padding: 0 45px;
+		background: url("../images/goal-banner.png") no-repeat center center;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		height: 342px;
+		padding: 0 45px;
 	*/
 }
 .invite-banner {
 	/*
-	background: url("../images/invite-banner.png") no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-	height: 342px;
-	padding: 0 45px;
+		background: url("../images/invite-banner.png") no-repeat center center;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		height: 342px;
+		padding: 0 45px;
 	*/
 }
 
@@ -160,16 +147,11 @@ footer {
 	margin:0;
 	width: 100%;
 }
-.player-info table{
-	font-size: 15px;
-}
 .chantal {
-	padding-left: 165px;
 	overflow: hidden;
 	width: 100%;
 }
 .julia {
-	padding-right: 165px;
 	overflow: hidden;
 	width: 100%;
 }
@@ -177,21 +159,16 @@ footer {
 	border-top: none;
 	border-bottom: 1px solid #0686B3;
 }
-.motto {
-	padding-bottom: 20px;
-}
 .motto p{
 	color: #0686B3;
 	font-style: italic;
 	font-weight: 800;
-	font-size: 16px;
 }
 
 
 /* TIMELINE SECTION */
 .success-timeline {
 	color: #0785B8;
-	padding: 0 125px 30px 125px;
 }
 .success-timeline h4{
 	text-align: center;
@@ -202,70 +179,54 @@ footer {
 .time {
 	color: #0785B8;
 	position: absolute;
-	font-size: 14px;
 	font-weight: bold;
-}
-.time-left{
-	margin-left: -82px;
-    margin-top: 11px;
 }
 
 @media screen and (min-width: 769px) {
 	
-.time-right{
-	margin-left: 500px;
-    margin-top: 11px;
-}
-
+	.time-right{
+		margin-left: 500px;
+		margin-top: 11px;
+	}
+	
 }
 @media screen and (max-width: 1199px) {
 	
-.time-right{
-	margin-left: 405px;
-    margin-top: 11px;
-}
-
+	.time-right{
+		margin-left: 405px;
+		margin-top: 11px;
+	}
+	
 }
 @media screen and (max-width: 990px) {
 	
-.time-right{
-	margin-left: 305px;
-    margin-top: 11px;
-}
-
+	.time-right{
+		margin-left: 305px;
+		margin-top: 11px;
+	}
+	
 }
 @media screen and (max-width: 768px) {
 	
-.time-right{
-	margin-left: -91px;
-    margin-top: 11px;
-}
-
+	.time-right{
+		margin-left: -91px;
+		margin-top: 11px;
+	}
+	
 }
 
 
 /* TURNIERE SECTION */
-.turniere {
-	padding-bottom: 30px;
-}
 .turniere h4{
-	padding: 28px 0;
 	text-align: center;
 	color: #0785B8;
-}
-.turniere>.container>.row{
-	padding: 0 110px 0 110px;
-}
-.turniere table{
-	font-size: 15px;
 }
 .turniere-table>tbody>tr>td {
 	border-top: none;
 	border-bottom: 1px solid #0785B8;
-	padding: 4px;
 }
 .table-hover > tbody > tr:hover {
-  background-color: beige;
+	background-color: beige;
 }
 
 
@@ -281,9 +242,10 @@ footer {
 }
 .social-media-icons li{
 	display: inline-block;
+	margin: -1px;
 }
-.social-media-icons img{
-	
+.gray:hover{
+	background-color: dimgray;
 }
 .social-media-icons>ul>li>a>i{
 	padding: 8px;
@@ -292,6 +254,10 @@ footer {
 	font-weight: bold;
 	font-size: 16px;
 	padding: 6px;
+}
+.fa-all:link, .fa-all:hover {
+	color: white;
+	text-decoration: none;
 }
 .social-media-posts {
 	max-width: 750px;
@@ -306,10 +272,6 @@ footer {
 	border: 1px solid lightgray;
     box-shadow: 2px 2px 3px #C1C1C1;
 }
-.social-media-placeholder{
-	background: url("../images/social-media-related.png") no-repeat center center;
-	height: 950px;
-}
 
 
 /* PARTNERS SECTION */
@@ -320,11 +282,7 @@ footer {
 .partner-info {
 	text-align: center;
 }
-.ansprechpartner {
-	padding: 50px 0;
-}
 .ansprechpartner b {
-	font-size: 16px;
 	color: black;
 }
 
@@ -355,14 +313,6 @@ footer {
 .contact-details {
 	padding-bottom: 30px;
 }
-.contact-details p, b, a {
-	font-size: 12px;
-}
-.contact-footnotes p{
-	font-size: 11px;
-}
-.placeholder-ie9{
-}
 .contact-form>form>.row {
 	padding-bottom: 15px;
 }
@@ -389,27 +339,12 @@ footer {
 	width: 100%;
 }
 
-
-.maps-placeholder{
-	margin-top:30px;
-	background: url("../images/maps.png") no-repeat center center;
-	height:222px;
-}
-
-
-.footer-class {
-	padding: 12px 60px 30px 60px;
-}
-.footer-class p{
-	font-size: 14px;
+/* FOOTER */
+.footer-class p, .footer-class li, .footer-class a:link{
 	color: #353535;
 }
 .footer-class li{
 	font-weight: bold;
-	color: #353535;
-}
-.footer-class a:link{
-	color: #353535;
 }
 
 /* SPECIFICS */
@@ -419,7 +354,6 @@ footer {
 .menu li>a {
 	color: white;
 	font-weight: bold;
-	font-size: 19px;
 }
 .menu>li>a:hover{
 	background-color: inherit;
@@ -427,41 +361,371 @@ footer {
 }
 
 /*
+	*
 	* MEDIA QUERIES
+	*
 */
 
-/* PHONES */
+/*
+	*	PHONES
+*/
 @media screen and (max-width: 768px) {
 	
-header {
-	padding: 0 15px;
-}
-h1 {
-	font-size: 14px;
-}
-nav>div.container-fluid {
-	padding: 0;
-}
-.navbar-brand {
-	max-width: 260px;
-}
+	header {
+		padding: 0 15px;
+	}
+	h1 {
+		font-size: 14px;
+	}
+	h3 {
+		font-size: 24px;
+		padding: 20px 0 30px 0;
+	}
+	h4 {
+		padding: 15px 0;
+		font-size: 18px;
+		padding: 15px 0;
+	}
+	h6 {
+		font-size: 11px;
+	}
+	nav>div.container-fluid {
+		padding: 0;
+	}
+	
+	.padding-right {
+		padding: 0;
+	}
+	.padding-left {
+		padding: 0;
+	}
+	
+	.navbar-brand {
+		max-width: 260px;
+	}
+	
+	
+	.splash-banner {
+		height: 350px;
+		padding: 0 15px;
+	}
+	#navbar-menu {
+		padding: 0;
+	}
+	.menu {
+		background-color: orange;
+		margin: 0;
+	}
+	.menu>li>a {
+		font-size: 14px;
+	}
+	.menu>li {
+		padding-left: 15px;
+	}
+	
+	/* PLAYER INFO */
+	div.col-md-6.table-responsive {
+		border: 0;
+	}
+	.player-info table{
+		font-size: 13px;
+	}
+	.chantal, .julia {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.motto {
+		padding-bottom: 12px;
+	}
+	.motto p{
+		font-size: 14px;
+	}
+	
+	/* TIMELINE SECTION */
+	.success-timeline {
+		padding: 0 55px 20px 55px;
+	}
+	.time {
+		font-size: 12px;
+	}
+	.timeline-body>p{
+		font-size: 12px;
+	}
+	.time-left{
+		margin-left: -91px;
+		margin-top: 12px;
+	}
+	.success-timeline>.row>.timeline>.timeline-item>.timeline-event:before {
+		left: -9px !important;
+	}
+	
+	/* TURNIERE SECTION */
+	.turniere {
+		padding-bottom: 20px;
+	}
+	.turniere>.container-fluid>.row{
+		padding: 0 15px;
+	}
+	.turniere table{
+		font-size: 12px;
+		padding: 0 
+	}
+	.turniere-table>tbody>tr>td {
+		padding: 4px;
+	}
+	
+	/* PARTNERS SECTION */
+	.partner-info {
+		font-size: 13px;
+	}
+	.ansprechpartner {
+		padding: 15px 0 30px 0;
+	}
+	
+	/* CONTACT */
+	.contact-details p, b, a {
+		font-size: 11px;
+	}
+	.contact-footnotes p{
+		font-size: 10px;
+	}
+	
+	/* FOOTER */
+	.footer-class {
+		padding: 10px 15px 15px 15px;
+	}
+	.footer-class p, .footer-class a{
+		font-size: 11px;
+	}
+	.footer-class>div>.text-left{
+		padding-right: 0;
+	}
+	.footer-class>div>.text-right{
+		padding-left: 0;
+	}
 	
 }
 
-/* TABLETS & LAPTOPS */
+/*
+	*	TABLETS & LAPTOPS
+*/
 @media screen and (min-width: 769px) {
 	
-header {
-	padding: 45px;
-}
+	header {
+		padding: 0 45px;
+	}
+	h3 {
+		font-size: 30px;
+		padding: 25px 0 60px 0;
+	}
+	h4 {
+		padding: 30px 0;
+		font-size: 21px;
+		padding: 28px 0;
+	}
+	h6 {
+		font-size: 13px;
+	}
+	
+	.padding-right {
+		padding: 0 15px 0 0;
+	}
+	.padding-left {
+		padding: 0 0 0 15px;
+	}
+	
+	.splash-banner {
+		height: 625px;
+		padding: 0 45px;
+	}
+	.splash-banner>nav>.container-fluid {
+		padding: 0;
+	}
+	.menu>li>a {
+		font-size: 19px;
+	}
+	
+	.player-info table{
+		font-size: 14px;
+	}
+	.chantal{
+		padding-left: 145px;
+	}
+	.julia {
+		padding-right: 145px;
+	}
+	.motto {
+		padding-bottom: 18px;
+	}
+	.motto p{
+		font-size: 15px;
+	}
+	
+	/* TIMELINE SECTION */
+	.success-timeline {
+		padding: 0 155px 30px 175px;
+	}
+	.success-timeline h4{
+		text-align: center;
+	}
+	.time {
+		font-size: 14px;
+	}
+	.time-left{
+		margin-left: -82px;
+		margin-top: 11px;
+	}
+	
+	/* TURNIERE SECTION */
+	.turniere {
+		padding-bottom: 30px;
+	}
+	.turniere h4{
+		padding: 28px 0;
+	}
+	.turniere>.container-fluid>.row{
+		padding: 0 110px 0 110px;
+	}
+	.turniere table{
+		font-size: 15px;
+	}
+	.turniere-table>tbody>tr>td {
+		padding: 4px;
+	}
+	
+	/* PARTNERS SECTION */
+	.ansprechpartner {
+		padding: 35px 0;
+	}
+	.ansprechpartner b {
+		font-size: 16px;
+	}
+	
+	/* CONTACT */
+	.contact-details p, b, a {
+		font-size: 12px;
+	}
+	.contact-footnotes p{
+		font-size: 11px;
+	}	
+	
+	/* FOOTER */
+	.footer-class {
+		padding: 12px 60px 30px 60px;
+	}
+	.footer-class p, .footer-class a{
+		font-size: 14px;
+	}
 	
 }
 
-/* LAPTOPS & DESKTOP MONITORS */
+/* 
+	*	LAPTOPS & DESKTOP MONITORS
+*/
 @media screen and (min-width: 1200px) {
 	
-header {
-	padding: 0 60px;
-}
+	header {
+		padding: 0 60px;
+	}
+	h3 {
+		font-size: 32px;
+		padding: 25px 0 60px 0;
+	}
+	h4 {
+		padding: 30px 0;
+		font-size: 24px;
+		padding: 28px 0;
+	}
+	h6 {
+		font-size: 13px;
+	}
+	
+	.padding-right {
+		padding: 0 15px 0 0;
+	}
+	.padding-left {
+		padding: 0 0 0 15px;
+	}
+	
+	.splash-banner {
+		height: 792px;
+		padding: 0 60px;
+	}
+	.menu>li>a {
+		font-size: 19px;
+	}
+	
+	.player-info table{
+		font-size: 15px;
+	}
+	.chantal {
+		padding-left: 165px;
+	}
+	.julia {
+		padding-right: 165px;
+	}
+	.motto {
+		padding-bottom: 20px;
+	}
+	.motto p{
+		font-size: 16px;
+	}
+	
+	/* TIMELINE SECTION */
+	.success-timeline {
+		padding: 0 125px 30px 125px;
+	}
+	.success-timeline h4{
+		text-align: center;
+	}
+	.time {
+		font-size: 14px;
+	}
+	.time-left{
+		margin-left: -82px;
+		margin-top: 11px;
+	}
+	
+	/* TURNIERE SECTION */
+	.turniere {
+		padding-bottom: 30px;
+	}
+	.turniere h4{
+		padding: 28px 0;
+	}
+	.turniere>.container-fluid>.row{
+		padding: 0 110px 0 110px;
+	}
+	.turniere table{
+		font-size: 15px;
+	}
+	.turniere-table>tbody>tr>td {
+		padding: 4px;
+	}
+	
+	/* PARTNERS SECTION */
+	.ansprechpartner {
+		padding: 50px 0;
+	}
+	.ansprechpartner b {
+		font-size: 16px;
+	}
+	
+	/* CONTACT */
+	.contact-details p, b, a {
+		font-size: 12px;
+	}
+	.contact-footnotes p{
+		font-size: 11px;
+	}
+	
+	
+	/* FOOTER */
+	.footer-class {
+		padding: 12px 60px 30px 60px;
+	}
+	.footer-class p, .footer-class a{
+		font-size: 14px;
+	}
 	
 }
