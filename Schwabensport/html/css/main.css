@@ -62,6 +62,22 @@ footer {
 	background-color: #777777;
 	color: white;
 }
+.carousel-inner {
+	overflow: hidden;
+}
+.carousel-col { 
+    position: relative; 
+    min-height: 1px; 
+    padding: 5px; 
+    float: left;
+}
+.col-centered {
+    float: none;
+    margin: 0 auto;
+}
+/*.item.active > div { display:none; } */
+.item.active > div:first-child { display:block; }
+
 
 /* BOOTSTRAP CUSTOMIZATIONS */
 .fa {
@@ -242,7 +258,9 @@ footer {
 
 /* PARTNERS SECTION */
 .partners-row {
+	/*
 	background: url("../images/partners-row.png") no-repeat center center;
+	*/
 	height:130px;
 }
 .partner-info {
@@ -620,6 +638,14 @@ footer {
 	.padding-left {
 		padding: 0 0 0 15px;
 	}
+	.carousel-inner .active.left { left: -25%; }
+	.carousel-inner .active.right{ left:  25%; }
+	.carousel-inner .next        { left:  25%; }
+	.carousel-inner .prev		     { left: -25%; }
+	.carousel-col                { width: 25%; }
+	.item.active > div:first-child + div { display:block; }
+	.item.active > div:first-child + div + div { display:block; }
+	.item.active > div:first-child + div + div + div { display:block; }
 	
 	.splash-banner {
 		height: 792px;
