@@ -93,6 +93,10 @@ footer {
 .col-centered {
     float: none;
     margin: 0 auto;
+	padding: 0;
+}
+.item{
+      transition: 500ms ease-in-out left;
 }
 /*.item.active > div { display:none; } */
 .item.active > div:first-child { display:block; }
@@ -162,9 +166,11 @@ footer {
 .damen-saison-table {
 	color: black;
 }
+/*
 .player-carousel {
 	padding-left: 100px;
 }
+*/
 .article {
 	text-align: center;
 }
@@ -420,7 +426,7 @@ footer {
 	#partners-carousel>.item.active > div:first-child + div + div + div + div { display:block; }
 	#partners-carousel>.item.active > div:first-child + div + div + div + div + div { display:block; }
 	
-	.ruckblick-gallery.container-fluid {
+	.ruckblick-gallery.container-fluid, .articles.container-fluid {
 		padding: 0;
 	}
 	
