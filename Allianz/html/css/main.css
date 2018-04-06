@@ -94,6 +94,9 @@ footer {
     float: none;
     margin: 0 auto;
 }
+.item{
+      transition: 500ms ease-in-out left;
+}
 /*.item.active > div { display:none; } */
 .item.active > div:first-child { display:block; }
 .player-carousel>.carousel-control.left {
