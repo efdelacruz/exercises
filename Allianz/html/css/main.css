@@ -153,6 +153,16 @@ footer {
 }
 
 
+.spiel-item{
+	height: 140px;
+	width: 327px;
+	background-color: #e1f0f5;
+}
+.spiel-item.active{
+	height: 172px;
+	width: 420px;
+	background-color: white;
+}
 .spielplan {
 	background-color: #014b92;
 	color: white;
@@ -307,14 +317,19 @@ footer {
 		height: auto;
 	}
 	
+	.spiel-carousel>.carousel-inner .active.left { left: -33%; }
+	.spiel-carousel>.carousel-inner .active.right{ left:  33%; }
+	.spiel-carousel>.carousel-inner .next        { left:  33%; }
+	.spiel-carousel>.carousel-inner .prev		 { left: -33%; }
+	.spiel-carousel>.carousel-col                { width: 33%; }
+	.spiel-carousel>.item.active > div:first-child + div { display:block; }
+	.spiel-carousel>.item.active > div:first-child + div + div { display:block; }
+	
 	.player-carousel>.carousel-inner .active.left { left: -20%; }
 	.player-carousel>.carousel-inner .active.right{ left:  20%; }
 	.player-carousel>.carousel-inner .next        { left:  20%; }
 	.player-carousel>.carousel-inner .prev		     { left: -20%; }
 	.player-carousel>.carousel-col                { width: 20%; }
-	.player-carousel>.carousel-inner>.item>div>img {
-		
-	}
 	.player-carousel>.item.active > div:first-child + div { display:block; }
 	.player-carousel>.item.active > div:first-child + div + div { display:block; }
 	.player-carousel>.item.active > div:first-child + div + div + div { display:block; }
@@ -398,6 +413,14 @@ footer {
 		width: 20%;
 		float: left;
 	}
+	
+	.spiel-carousel>.carousel-inner .active.left { left: -33%; }
+	.spiel-carousel>.carousel-inner .active.right{ left:  33%; }
+	.spiel-carousel>.carousel-inner .next        { left:  33%; }
+	.spiel-carousel>.carousel-inner .prev		 { left: -33%; }
+	.spiel-carousel>.carousel-col                { width: 33%; }
+	.spiel-carousel>.item.active > div:first-child + div { display:block; }
+	.spiel-carousel>.item.active > div:first-child + div + div { display:block; }
 	
 	.player-carousel>.carousel-inner .active.left { left: -20%; }
 	.player-carousel>.carousel-inner .active.right{ left:  20%; }
@@ -499,14 +522,19 @@ footer {
 		padding-right: 80px;
 	}
 	
+	.spiel-carousel>.carousel-inner .active.left { left: -33%; }
+	.spiel-carousel>.carousel-inner .active.right{ left:  33%; }
+	.spiel-carousel>.carousel-inner .next        { left:  33%; }
+	.spiel-carousel>.carousel-inner .prev		 { left: -33%; }
+	.spiel-carousel>.carousel-col                { width: 33%; }
+	.spiel-carousel>.item.active > div:first-child + div { display:block; }
+	.spiel-carousel>.item.active > div:first-child + div + div { display:block; }
+	
 	.player-carousel>.carousel-inner .active.left { left: -20%; }
 	.player-carousel>.carousel-inner .active.right{ left:  20%; }
 	.player-carousel>.carousel-inner .next        { left:  20%; }
-	.player-carousel>.carousel-inner .prev		     { left: -20%; }
+	.player-carousel>.carousel-inner .prev		  { left: -20%; }
 	.player-carousel>.carousel-col                { width: 20%; }
-	.player-carousel>.carousel-inner>.item>div>img {
-		
-	}
 	.player-carousel>.item.active > div:first-child + div { display:block; }
 	.player-carousel>.item.active > div:first-child + div + div { display:block; }
 	.player-carousel>.item.active > div:first-child + div + div + div { display:block; }
