@@ -16,7 +16,7 @@
 		<!-- Optional theme -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 		
-		<link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
+		<link rel="stylesheet" href="http://www.landmarkmlp.com/js-plugin/owl.carousel/owl-carousel/owl.carousel.css" type="text/css" media="screen, projection">
 		
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 		<link rel="stylesheet" href="css/main.css" type="text/css" media="screen, projection">
@@ -247,7 +247,7 @@
 		</section>
 		
 		<section id="players" class="players-partners">
-			<div class="players border-bottom border-white row">
+			<div class="players border-bottom border-white row hidden">
 				<!--img class="img-responsive" src="images/carousel-players.png"/-->
 				<div class="col-xs-11 col-md-10 col-centered">
 				<div id="player-carousel" class="player-carousel carousel slide" data-type="multi" >
@@ -301,40 +301,26 @@
 			<div class="partners border-bottom border-white row">
 				<!--img class="img-responsive" src="images/partners.png"/-->
 				<div class="col-xs-11 col-md-10 col-centered">
-				<div id="partners-carousel" class=" partners-carousel carousel slide" data-ride="carousel" data-type="multi" data-interval="2000" >
+				<div id="partners-carousel">
 									
-					<div class="carousel-inner">
-						<div class="item active">
-							<div class="carousel-col col-md-2 col-xs-2">
-								<img class="img-responsive" src="images/partners1.png" />
+							<div class="item">
+								<img src="images/partners1.png" />
 							</div>
-						</div>
-						<div class="item">
-							<div class="carousel-col col-md-2 col-xs-2">
-								<img class="img-responsive" src="images/partners2.png" />
+							<div class="item">
+								<img src="images/partners2.png" />
 							</div>
-						</div>
-						<div class="item">
-							<div class="carousel-col col-md-2 col-xs-2">
-								<img class="img-responsive" src="images/partners3.png" />
+							<div class="item">
+								<img src="images/partners3.png" />
 							</div>
-						</div>
-						<div class="item">
-							<div class="carousel-col col-md-2 col-xs-2">
-								<img class="img-responsive" src="images/partners4.png" />
+							<div class="item">
+								<img src="images/partners4.png" />
 							</div>
-						</div>
-						<div class="item">
-							<div class="carousel-col col-md-2 col-xs-2">
-								<img class="img-responsive" src="images/partners5.png" />
+							<div class="item">
+								<img src="images/partners5.png" />
 							</div>
-						</div>
-						<div class="item">
-							<div class="carousel-col col-md-2 col-xs-2">
-								<img class="img-responsive" src="images/partners6.png" />
+							<div class="item">
+								<img src="images/partners6.png" />
 							</div>
-						</div>
-					</div>
 				
 				</div>
 				</div>
@@ -428,42 +414,18 @@
 		<!--script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script -->
 		<!--script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script-->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-		<script type="text/javascript" src="http://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
 		
+		<script type="text/javascript" src="http://www.landmarkmlp.com/js-plugin/owl.carousel/owl-carousel/owl.carousel.js"></script>
+		     
 		<script type="text/javascript">
-			$('.player-carousel .item').each(function() {
-				var next = $(this).next();
-				if (!next.length) {
-					next = $(this).siblings(':first');
-				}
-				next.children(':first-child').clone().appendTo($(this));
-
-				for (var i = 0; i < 3; i++) {
-					next = next.next();
-					if (!next.length) {
-						next = $(this).siblings(':first');
-					}
-
-					next.children(':first-child').clone().appendTo($(this));
-				}
-			});
-		</script>
-		<script type="text/javascript">
-			$('.partners-carousel[data-type="multi"] .item').each(function() {
-				var next = $(this).next();
-				if (!next.length) {
-					next = $(this).siblings(':first');
-				}
-				next.children(':first-child').clone().appendTo($(this));
-
-				for (var i = 0; i < 4; i++) {
-					next = next.next();
-					if (!next.length) {
-						next = $(this).siblings(':first');
-					}
-
-					next.children(':first-child').clone().appendTo($(this));
-				}
+			$("#partners-carousel").owlCarousel({
+				
+				autoPlay: 2000,
+				
+				items : 3,
+				itemsDesktop : [1199,3],
+				itemsDesktopSmall : [979,3]
+				
 			});
 		</script>
 		<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
