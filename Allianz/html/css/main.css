@@ -76,7 +76,32 @@ footer {
 	width: 100%;
 	height: auto;
 }
-
+.carousel img {
+	width: auto;
+	height: auto;
+}
+.carousel-col { 
+    position: relative; 
+    min-height: 1px; 
+    padding: 5px; 
+    float: left;
+}
+.player-carousel>.carousel-inner>.item>.carousel-col {
+	margin: 0;
+	padding: 0;
+}
+.col-centered {
+    float: none;
+    margin: 0 auto;
+}
+/*.item.active > div { display:none; } */
+.item.active > div:first-child { display:block; }
+.player-carousel>.carousel-control.left {
+	background-image: none;
+}
+.player-carousel>.carousel-control.right {
+	background-image: none;
+}
 
 .side-nav {
 	
@@ -109,18 +134,14 @@ footer {
 .game-records {
 	background-color: #014b92;
 }
-/*
-	.players {
-	width: 100%;
-	min-height: 469px;
+.players {
 	background-image: url("../images/carousel-players.png");
-	}
-	.partners {
-	width: 100%;
+}
+.partners {
 	min-height: 129px;
 	background-image: url("../images/partners.png");
-	}
-*/
+	background-repeat: repeat-x;
+}
 .videos-ad {
 	background-image: url("../images/videos-bg.png");
 	background-repeat: repeat-x;
@@ -140,6 +161,9 @@ footer {
 }
 .damen-saison-table {
 	color: black;
+}
+.player-carousel {
+	padding-left: 100px;
 }
 .article {
 	text-align: center;
@@ -268,10 +292,38 @@ footer {
 		padding-left: 40px;
 		padding-right: 40px;
 	}
-	
-	.ruckblick-gallery.container-fluid {
-		padding: 0 30px;
+	.col-xs-20p {
+		width: 20%;
+		float: left;
 	}
+	.col-xs-20p>img {
+		width: 100%;
+		height: auto;
+	}
+	
+	.player-carousel>.carousel-inner .active.left { left: -20%; }
+	.player-carousel>.carousel-inner .active.right{ left:  20%; }
+	.player-carousel>.carousel-inner .next        { left:  20%; }
+	.player-carousel>.carousel-inner .prev		     { left: -20%; }
+	.player-carousel>.carousel-col                { width: 20%; }
+	.player-carousel>.carousel-inner>.item>div>img {
+		
+	}
+	.player-carousel>.item.active > div:first-child + div { display:block; }
+	.player-carousel>.item.active > div:first-child + div + div { display:block; }
+	.player-carousel>.item.active > div:first-child + div + div + div { display:block; }
+	.player-carousel>.item.active > div:first-child + div + div + div + div { display:block; }
+	
+	#partners-carousel>.carousel-inner .active.left { left: -16.6%; }
+	#partners-carousel>.carousel-inner .active.right{ left:  16.6%; }
+	#partners-carousel>.carousel-inner .next        { left:  16.6%; }
+	#partners-carousel>.carousel-inner .prev		     { left: -16.6%; }
+	#partners-carousel>.carousel-col                { width: 16.6%; }
+	#partners-carousel>.item.active > div:first-child + div { display:block; }
+	#partners-carousel>.item.active > div:first-child + div + div { display:block; }
+	#partners-carousel>.item.active > div:first-child + div + div + div { display:block; }
+	#partners-carousel>.item.active > div:first-child + div + div + div + div { display:block; }
+	#partners-carousel>.item.active > div:first-child + div + div + div + div + div { display:block; }
 	
 	.spielplan,.damen-saison {
 		padding: 18px 10px;
@@ -336,7 +388,37 @@ footer {
 		padding-left: 60px;
 		padding-right: 60px;
 	}
+	.col-md-20p{
+		width: 20%;
+		float: left;
+	}
 	
+	.player-carousel>.carousel-inner .active.left { left: -20%; }
+	.player-carousel>.carousel-inner .active.right{ left:  20%; }
+	.player-carousel>.carousel-inner .next        { left:  20%; }
+	.player-carousel>.carousel-inner .prev		     { left: -20%; }
+	.player-carousel>.carousel-col                { width: 20%; }
+	.player-carousel>.carousel-inner>.item>div>img {
+		
+	}
+	.player-carousel>.item.active > div:first-child + div { display:block; }
+	.player-carousel>.item.active > div:first-child + div + div { display:block; }
+	.player-carousel>.item.active > div:first-child + div + div + div { display:block; }
+	.player-carousel>.item.active > div:first-child + div + div + div + div { display:block; }
+	.player-carousel>.carousel-control {
+		margin-top: 360px;
+	}
+	
+	#partners-carousel>.carousel-inner .active.left { left: -16.6%; }
+	#partners-carousel>.carousel-inner .active.right{ left:  16.6%; }
+	#partners-carousel>.carousel-inner .next        { left:  16.6%; }
+	#partners-carousel>.carousel-inner .prev		     { left: -16.6%; }
+	#partners-carousel>.carousel-col                { width: 16.6%; }
+	#partners-carousel>.item.active > div:first-child + div { display:block; }
+	#partners-carousel>.item.active > div:first-child + div + div { display:block; }
+	#partners-carousel>.item.active > div:first-child + div + div + div { display:block; }
+	#partners-carousel>.item.active > div:first-child + div + div + div + div { display:block; }
+	#partners-carousel>.item.active > div:first-child + div + div + div + div + div { display:block; }
 	
 	.ruckblick-gallery.container-fluid {
 		padding: 0;
@@ -410,6 +492,30 @@ footer {
 		padding-left: 80px;
 		padding-right: 80px;
 	}
+	
+	.player-carousel>.carousel-inner .active.left { left: -20%; }
+	.player-carousel>.carousel-inner .active.right{ left:  20%; }
+	.player-carousel>.carousel-inner .next        { left:  20%; }
+	.player-carousel>.carousel-inner .prev		     { left: -20%; }
+	.player-carousel>.carousel-col                { width: 20%; }
+	.player-carousel>.carousel-inner>.item>div>img {
+		
+	}
+	.player-carousel>.item.active > div:first-child + div { display:block; }
+	.player-carousel>.item.active > div:first-child + div + div { display:block; }
+	.player-carousel>.item.active > div:first-child + div + div + div { display:block; }
+	.player-carousel>.item.active > div:first-child + div + div + div + div { display:block; }
+	
+	#partners-carousel>.carousel-inner .active.left { left: -16.6%; }
+	#partners-carousel>.carousel-inner .active.right{ left:  16.6%; }
+	#partners-carousel>.carousel-inner .next        { left:  16.6%; }
+	#partners-carousel>.carousel-inner .prev		     { left: -16.6%; }
+	#partners-carousel>.carousel-col                { width: 16.6%; }
+	#partners-carousel>.item.active > div:first-child + div { display:block; }
+	#partners-carousel>.item.active > div:first-child + div + div { display:block; }
+	#partners-carousel>.item.active > div:first-child + div + div + div { display:block; }
+	#partners-carousel>.item.active > div:first-child + div + div + div + div { display:block; }
+	#partners-carousel>.item.active > div:first-child + div + div + div + div + div { display:block; }
 	
 	.spielplan {
 		background-color: #014b92;

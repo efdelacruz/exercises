@@ -260,8 +260,8 @@ footer {
 .partners-row {
 	/*
 	background: url("../images/partners-row.png") no-repeat center center;
-	*/
 	height:130px;
+	*/
 }
 .partner-info {
 	text-align: center;
@@ -387,6 +387,16 @@ footer {
 	.navbar-brand {
 		max-width: 260px;
 	}
+	.carousel-inner .active.left { left: -16.6%; }
+	.carousel-inner .active.right{ left:  16.6%; }
+	.carousel-inner .next        { left:  16.6%; }
+	.carousel-inner .prev		     { left: -16.6%; }
+	.carousel-col                { width: 16.6%; }
+	.item.active > div:first-child + div { display:block; }
+	.item.active > div:first-child + div + div { display:block; }
+	.item.active > div:first-child + div + div + div { display:block; }
+	.item.active > div:first-child + div + div + div + div { display:block; }
+	.item.active > div:first-child + div + div + div + div + div { display:block; }
 	
 	
 	.splash-banner {
@@ -521,6 +531,16 @@ footer {
 	.padding-left {
 		padding: 0 0 0 15px;
 	}
+	.carousel-inner .active.left { left: -16.6%; }
+	.carousel-inner .active.right{ left:  16.6%; }
+	.carousel-inner .next        { left:  16.6%; }
+	.carousel-inner .prev		     { left: -16.6%; }
+	.carousel-col                { width: 16.6%; }
+	.item.active > div:first-child + div { display:block; }
+	.item.active > div:first-child + div + div { display:block; }
+	.item.active > div:first-child + div + div + div { display:block; }
+	.item.active > div:first-child + div + div + div + div { display:block; }
+	.item.active > div:first-child + div + div + div + div + div { display:block; }
 	
 	.splash-banner {
 		height: 625px;
@@ -638,14 +658,16 @@ footer {
 	.padding-left {
 		padding: 0 0 0 15px;
 	}
-	.carousel-inner .active.left { left: -25%; }
-	.carousel-inner .active.right{ left:  25%; }
-	.carousel-inner .next        { left:  25%; }
-	.carousel-inner .prev		     { left: -25%; }
-	.carousel-col                { width: 25%; }
+	.carousel-inner .active.left { left: -16.6%; }
+	.carousel-inner .active.right{ left:  16.6%; }
+	.carousel-inner .next        { left:  16.6%; }
+	.carousel-inner .prev		     { left: -16.6%; }
+	.carousel-col                { width: 16.6%; }
 	.item.active > div:first-child + div { display:block; }
 	.item.active > div:first-child + div + div { display:block; }
 	.item.active > div:first-child + div + div + div { display:block; }
+	.item.active > div:first-child + div + div + div + div { display:block; }
+	.item.active > div:first-child + div + div + div + div + div { display:block; }
 	
 	.splash-banner {
 		height: 792px;

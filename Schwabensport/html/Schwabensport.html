@@ -467,9 +467,9 @@
 			</div>
 			<div class="partners-row row">
 				<div class="col-xs-11 col-md-10 col-centered">
-				<div id="partners-carousel" class="carousel slide" data-ride="carousel" data-type="multi" data-interval="2500" >
+				<div id="partners-carousel" class="carousel slide" data-ride="carousel" data-type="multi" data-interval="2000" >
 				
-					<ol class="carousel-indicators">
+					<ol class="carousel-indicators hidden">
 						<li data-target="#partners-carousel" data-slide-to="0" class="active"></li>
 						<li data-target="#partners-carousel" data-slide-to="1"></li>
 						<li data-target="#partners-carousel" data-slide-to="2"></li>
@@ -661,7 +661,7 @@
 				}
 				next.children(':first-child').clone().appendTo($(this));
 
-				for (var i = 0; i < 2; i++) {
+				for (var i = 0; i < 4; i++) {
 					next = next.next();
 					if (!next.length) {
 						next = $(this).siblings(':first');
