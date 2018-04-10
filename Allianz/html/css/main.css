@@ -158,7 +158,7 @@ footer {
 }
 .videos-ad {
 	background-image: url("../images/videos-bg.png");
-	background-repeat: repeat-x;
+	background-repeat: repeat;
 	min-height: 840px;
 }
 
@@ -223,6 +223,27 @@ footer {
 	border-radius: 3px;
 	border-color: #568dc6;
 }
+
+.media-wrapper{
+	text-align: center;
+}
+.video-gallery {
+	min-height: 300px;
+	border: 11px solid white;
+	color: white;
+}
+.video-ember {
+	border-bottom: 11px solid white;
+}
+.video-list-label, .video-footer-label {
+	background-color: orange;
+	font-size: 12px;
+	font-weight: bold;
+}
+.side-ads {
+	padding: 0 18px;
+}
+
 #map-container {
 	height: 215px;
 	width: 100%;
@@ -302,6 +323,27 @@ footer {
 }
 .article-content-preview img, .article-img-preview img {
 	margin: 0 auto;
+}
+
+.ruckblick-gallery>div>div.article-content-preview>img {
+	max-height: 100px;
+	width: auto;
+}
+
+.media-wrapper h3{
+	color: white;
+	padding: 20px 0;
+}
+.video-list-label {
+	text-align: left;
+}
+.video-footer-label {
+	text-align: right;
+	padding-right: 125px;
+}
+.side-ads>div {
+	border: 11px solid white;
+	margin: 0 0 20px 10px;
 }
 
 .footer-row>div {
@@ -384,6 +426,17 @@ footer {
 	#partners-carousel>.item.active > div:first-child + div + div + div { display:block; }
 	#partners-carousel>.item.active > div:first-child + div + div + div + div { display:block; }
 	#partners-carousel>.item.active > div:first-child + div + div + div + div + div { display:block; }
+	
+	.video-carousel>.carousel-inner .active.left { left: -16.6%; }
+	.video-carousel>.carousel-inner .active.right{ left:  16.6%; }
+	.video-carousel>.carousel-inner .next        { left:  16.6%; }
+	.video-carousel>.carousel-inner .prev		     { left: -16.6%; }
+	.video-carousel>.carousel-col                { width: 16.6%; }
+	.video-carousel>.item.active > div:first-child + div { display:block; }
+	.video-carousel>.item.active > div:first-child + div + div { display:block; }
+	.video-carousel>.item.active > div:first-child + div + div + div { display:block; }
+	.video-carousel>.item.active > div:first-child + div + div + div + div { display:block; }
+	.video-carousel>.item.active > div:first-child + div + div + div + div + div { display:block; }
 	
 	.spielplan,.damen-saison {
 		padding: 18px 10px;
@@ -516,6 +569,17 @@ footer {
 	#partners-carousel>.item.active > div:first-child + div + div + div { display:block; }
 	#partners-carousel>.item.active > div:first-child + div + div + div + div { display:block; }
 	#partners-carousel>.item.active > div:first-child + div + div + div + div + div { display:block; }
+		
+	.video-carousel>.carousel-inner .active.left { left: -16.6%; }
+	.video-carousel>.carousel-inner .active.right{ left:  16.6%; }
+	.video-carousel>.carousel-inner .next        { left:  16.6%; }
+	.video-carousel>.carousel-inner .prev		     { left: -16.6%; }
+	.video-carousel>.carousel-col                { width: 16.6%; }
+	.video-carousel>.item.active > div:first-child + div { display:block; }
+	.video-carousel>.item.active > div:first-child + div + div { display:block; }
+	.video-carousel>.item.active > div:first-child + div + div + div { display:block; }
+	.video-carousel>.item.active > div:first-child + div + div + div + div { display:block; }
+	.video-carousel>.item.active > div:first-child + div + div + div + div + div { display:block; }
 	
 	.ruckblick-gallery.container-fluid, .articles.container-fluid {
 		padding: 0;
@@ -637,6 +701,17 @@ footer {
 	#partners-carousel>.item.active > div:first-child + div + div + div { display:block; }
 	#partners-carousel>.item.active > div:first-child + div + div + div + div { display:block; }
 	#partners-carousel>.item.active > div:first-child + div + div + div + div + div { display:block; }
+	
+	.video-carousel>.carousel-inner .active.left { left: -16.6%; }
+	.video-carousel>.carousel-inner .active.right{ left:  16.6%; }
+	.video-carousel>.carousel-inner .next        { left:  16.6%; }
+	.video-carousel>.carousel-inner .prev		     { left: -16.6%; }
+	.video-carousel>.carousel-col                { width: 16.6%; }
+	.video-carousel>.item.active > div:first-child + div { display:block; }
+	.video-carousel>.item.active > div:first-child + div + div { display:block; }
+	.video-carousel>.item.active > div:first-child + div + div + div { display:block; }
+	.video-carousel>.item.active > div:first-child + div + div + div + div { display:block; }
+	.video-carousel>.item.active > div:first-child + div + div + div + div + div { display:block; }
 	
 	.spielplan {
 		background-color: #014b92;

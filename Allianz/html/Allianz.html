@@ -442,7 +442,83 @@
 		</section>
 		
 		<section id="media" class="videos-ad border-bottom border-white lr-padding">
-			
+			<div class="container-fluid media-wrapper">
+				<h3 class="text-uppercase">VBL Auf Sportdeutschland.tv</h3>
+				<div class="row">
+					<div class="col-md-9 video-gallery">
+						<div class="row video-ember">
+							<img class="img-responsive" src="images/video-event.png" />
+						</div>
+						<div class="row video-list-label">
+							<h4>v Allianz MTV Stuttgart</h4>
+						</div>
+						<div class="row video-carousel-wrapper">
+							<div class="col-xs-12 col-md-12 col-centered">
+								<div id="video-carousel" class="video-carousel carousel slide" data-type="multi" data-interval="2000" data-ride="carousel" data-type="multi">
+						
+									<ol class="carousel-indicators hidden">
+										<li data-target="#spiel-carousel" data-slide-to="0" class="active"></li>
+										<li data-target="#spiel-carousel" data-slide-to="1"></li>
+										<li data-target="#spiel-carousel" data-slide-to="2"></li>
+									</ol>
+						
+									<div class="carousel-inner">
+										<div class="item video-item active">
+											<div class="carousel-col col-md-2 col-xs-2">
+												<img class="img-responsive" src="images/video-thumbnail.png"/>
+											</div>
+										</div>
+										<div class="item video-item">
+											<div class="carousel-col col-md-2 col-xs-2">
+												<img class="img-responsive" src="images/video-thumbnail.png"/>
+											</div>
+										</div>
+										<div class="item video-item">
+											<div class="carousel-col col-md-2 col-xs-2">
+												<img class="img-responsive" src="images/video-thumbnail.png"/>
+											</div>
+										</div>
+										<div class="item video-item active">
+											<div class="carousel-col col-md-2 col-xs-2">
+												<img class="img-responsive" src="images/video-thumbnail.png"/>
+											</div>
+										</div>
+										<div class="item video-item">
+											<div class="carousel-col col-md-2 col-xs-2">
+												<img class="img-responsive" src="images/video-thumbnail.png"/>
+											</div>
+										</div>
+										<div class="item video-item">
+											<div class="carousel-col col-md-2 col-xs-2">
+												<img class="img-responsive" src="images/video-thumbnail.png"/>
+											</div>
+										</div>
+									</div>
+						
+									<!-- Carousel nav -->
+									<a class="carousel-control left" href="#video-carousel" data-slide="prev">
+										<span class="glyphicon glyphicon-chevron-left"></span>
+									</a>
+									<a class="carousel-control right" href="#video-carousel" data-slide="next">
+										<span class="glyphicon glyphicon-chevron-right"></span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="row video-footer-label">
+							<h4>Volleyball Bundesliga auf Sportdeutschland.TV</h4>
+						</div>
+					</div>
+					<div class="col-md-3 side-ads">
+						<div class="row">
+							<img class="img-responsive" src="images/camera-stream-ad.png" />
+						</div>
+						<div class="row">
+							<img class="img-responsive" src="images/scharrena-event.png" />
+						</div>
+					</div>
+				</div>
+			</div>
 		</section>
 		
 		<footer class="container-fluid">
@@ -593,6 +669,24 @@
 		</script>
 		<script type="text/javascript">
 			$('.partners-carousel[data-type="multi"] .item').each(function() {
+				var next = $(this).next();
+				if (!next.length) {
+					next = $(this).siblings(':first');
+				}
+				next.children(':first-child').clone().appendTo($(this));
+				
+				for (var i = 0; i < 4; i++) {
+					next = next.next();
+					if (!next.length) {
+						next = $(this).siblings(':first');
+					}
+					
+					next.children(':first-child').clone().appendTo($(this));
+				}
+			});
+		</script>
+		<script type="text/javascript">
+			$('.video-carousel[data-type="multi"] .item').each(function() {
 				var next = $(this).next();
 				if (!next.length) {
 					next = $(this).siblings(':first');
