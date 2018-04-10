@@ -61,30 +61,31 @@
 						</ol>
 						
 						<div class="carousel-inner">
-							<div class="item spiel-item">
-								<div class="carousel-col col-md-4 col-xs-12">
-									<p>test left</p>
-								</div>
-							</div>
 							<div class="item spiel-item active">
-								<div class="carousel-col col-md-4 col-xs-12">
-									<p>test center</p>
-									<p>wyjefga wefih aahefn io flkawjefwae jfawjefis diew f;oawehf</p>
+								<div class="carousel-col col-md-4 col-xs-4">
+									<img class="img-responsive" src="images/spiel-left.png"/>
 								</div>
 							</div>
 							<div class="item spiel-item">
-								<div class="carousel-col col-md-4 col-xs-12">
-									<p>test right</p>
+								<div class="carousel-col col-md-4 col-xs-4">
+									<img class="center img-responsive" src="images/spiel-center2.png"/>
+								</div>
+							</div>
+							<div class="item spiel-item">
+								<div class="carousel-col col-md-4 col-xs-4">
+									<img class="img-responsive" src="images/spiel-right.png"/>
 								</div>
 							</div>
 						</div>
 						
 						<!-- Carousel nav -->
 						<a class="carousel-control left" href="#spiel-carousel" data-slide="prev">
-							<span class="glyphicon glyphicon-chevron-left"></span>
+						<!--span class="glyphicon glyphicon-chevron-left"></span-->
+							<img class="img-responsive margin-top" src="images/carousel-spiel-left.png" />
 						</a>
 						<a class="carousel-control right" href="#spiel-carousel" data-slide="next">
-							<span class="glyphicon glyphicon-chevron-right"></span>
+						<!--span class="glyphicon glyphicon-chevron-right"></span-->
+							<img class="img-responsive margin-top" src="images/carousel-spiel-right.png" />
 						</a>
 					</div>
 				</div>
@@ -467,7 +468,11 @@
 		<script type="text/javascript" src="http://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
 		
 		<script type="text/javascript">
+			$('.spiel-carousel').carousel({
+				interval:false
+			});
 			$('.spiel-carousel .item').each(function() {
+				var carousel = $('.spiel-carousel');
 				var next = $(this).next();
 				if (!next.length) {
 					next = $(this).siblings(':first');
@@ -482,6 +487,48 @@
 					
 					next.children(':first-child').clone().appendTo($(this));
 				}
+				
+				var j=0;
+				$('.spiel-item.active').children().each(function(){
+					if ($(window).width() >= 1200){
+						if (j==1){
+							this.setAttribute('style','padding-bottom:55px;background-color:white;');
+						}else{
+							this.setAttribute('style','margin-top:20px;');
+						}
+					}else if($(window).width() >= 769){
+						if (j==1){
+							this.setAttribute('style','padding-bottom:85px;background-color:white;');
+						}else{
+							this.setAttribute('style','margin-top:20px;');
+						}
+					}
+					j = j+1;
+				});
+				
+			});
+			$( '.spiel-carousel' ).on( 'slid.bs.carousel', function () {
+				$('.spiel-item').children().each(function(){
+					this.setAttribute('style','');
+				});
+				
+				var j=0;
+				$('.spiel-item.active').children().each(function(){
+					if ($(window).width() >= 1200){
+						if (j==1){
+							this.setAttribute('style','padding-bottom:55px;background-color:white;');
+						}else{
+							this.setAttribute('style','margin-top:20px;');
+						}
+					}else if($(window).width() >= 769){
+						if (j==1){
+							this.setAttribute('style','padding-bottom:85px;background-color:white;');
+						}else{
+							this.setAttribute('style','margin-top:20px;');
+						}
+					}
+					j = j+1;
+				});
 			});
 		</script>
 		<script type="text/javascript">

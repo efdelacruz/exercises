@@ -76,19 +76,10 @@ footer {
 	width: 100%;
 	height: auto;
 }
+
 .carousel img {
 	width: auto;
 	height: auto;
-}
-.carousel-col { 
-    position: relative; 
-    min-height: 1px; 
-    padding: 5px; 
-    float: left;
-}
-.player-carousel>.carousel-inner>.item>.carousel-col {
-	margin: 0;
-	padding: 0;
 }
 .col-centered {
     float: none;
@@ -98,12 +89,28 @@ footer {
 .item{
       transition: 500ms ease-in-out left;
 }
-/*.item.active > div { display:none; } */
+/*.item.active.spiel-item > div { display:none; }*/
 .item.active > div:first-child { display:block; }
-.player-carousel>.carousel-control.left {
-	background-image: none;
+.carousel-col { 
+    position: relative; 
+    min-height: 1px; 
+    padding: 5px; 
+    float: left;
 }
-.player-carousel>.carousel-control.right {
+
+
+.spiel-carousel {
+	padding: 25px 0;
+	margin: 0 50px;
+}
+.player-carousel>.carousel-inner>.item>.carousel-col {
+	margin: 0;
+	padding: 0;
+}
+.spiel-carousel>.carousel-control.left {
+	margin-left: -30px;
+}
+.spiel-carousel>.carousel-control.left, .spiel-carousel>.carousel-control.right, .player-carousel>.carousel-control.left, .player-carousel>.carousel-control.right {
 	background-image: none;
 }
 
@@ -123,7 +130,8 @@ footer {
 .carousel-wrapper {
 	background-color: #014b92;
 	width: 100%;
-	min-height: 224px;
+    margin: 0;
+	/*min-height: 224px;*/
 }
 .splash-banner {
 	/*
@@ -154,14 +162,19 @@ footer {
 
 
 .spiel-item{
-	height: 140px;
-	width: 327px;
-	background-color: #e1f0f5;
+	min-height: 140px;
 }
 .spiel-item.active{
-	height: 172px;
+	/*
+	min-height: 172px;
 	width: 420px;
-	background-color: white;
+	background-color: white;*/
+}
+.spiel-item.active>.carousel-col{
+	background-color: #e1f0f5;
+	min-height: 140px;
+	padding: 0;
+	border: 1px solid #014b92;
 }
 .spielplan {
 	background-color: #014b92;
@@ -316,6 +329,9 @@ footer {
 		width: 100%;
 		height: auto;
 	}
+	.margin-top {
+		margin-top: 25px;
+	}
 	
 	.spiel-carousel>.carousel-inner .active.left { left: -33%; }
 	.spiel-carousel>.carousel-inner .active.right{ left:  33%; }
@@ -324,6 +340,12 @@ footer {
 	.spiel-carousel>.carousel-col                { width: 33%; }
 	.spiel-carousel>.item.active > div:first-child + div { display:block; }
 	.spiel-carousel>.item.active > div:first-child + div + div { display:block; }
+	.spiel-carousel>.carousel-inner>.item.active>div>div>img {
+		padding-bottom: 30px;
+	}
+	.spiel-carousel>.carousel-control.right {
+		margin-right:-88px;
+	}
 	
 	.player-carousel>.carousel-inner .active.left { left: -20%; }
 	.player-carousel>.carousel-inner .active.right{ left:  20%; }
@@ -394,6 +416,26 @@ footer {
 	}
 	
 }
+/* OLD SMALLER PHONES */
+@media screen and (max-width: 415px) {
+	
+	.carousel-wrapper {
+		height: 100px;
+	}
+	.spiel-carousel>.carousel-control.right>img, .spiel-carousel>.carousel-control.left>img {
+		height: 50px;
+	}	
+	.spiel-carousel>.carousel-control.left {
+		margin-left:-10px;
+	}	
+	.spiel-carousel>.carousel-control.right {
+		margin-right:-42px;
+	}	
+	.spiel-item.active>.carousel-col{
+		min-height: 50px;
+	}
+
+}
 
 /* TABLETS & LAPTOPS */
 @media screen and (min-width: 769px) {
@@ -413,6 +455,9 @@ footer {
 		width: 20%;
 		float: left;
 	}
+	.margin-top {
+		margin-top: 45px;
+	}
 	
 	.spiel-carousel>.carousel-inner .active.left { left: -33%; }
 	.spiel-carousel>.carousel-inner .active.right{ left:  33%; }
@@ -421,6 +466,12 @@ footer {
 	.spiel-carousel>.carousel-col                { width: 33%; }
 	.spiel-carousel>.item.active > div:first-child + div { display:block; }
 	.spiel-carousel>.item.active > div:first-child + div + div { display:block; }
+	.spiel-carousel>.carousel-inner>.item.active>div>div>img {
+		padding-bottom: 60px;
+	}
+	.spiel-carousel>.carousel-control.right {
+		margin-right:-112px;
+	}
 	
 	.player-carousel>.carousel-inner .active.left { left: -20%; }
 	.player-carousel>.carousel-inner .active.right{ left:  20%; }
@@ -521,6 +572,9 @@ footer {
 		padding-left: 80px;
 		padding-right: 80px;
 	}
+	.margin-top {
+		margin-top: 45px;
+	}
 	
 	.spiel-carousel>.carousel-inner .active.left { left: -33%; }
 	.spiel-carousel>.carousel-inner .active.right{ left:  33%; }
@@ -529,6 +583,12 @@ footer {
 	.spiel-carousel>.carousel-col                { width: 33%; }
 	.spiel-carousel>.item.active > div:first-child + div { display:block; }
 	.spiel-carousel>.item.active > div:first-child + div + div { display:block; }
+	.spiel-carousel>.carousel-inner>.item.active>div>div>img {
+		padding-bottom: 60px;
+	}
+	.spiel-carousel>.carousel-control.right {
+		margin-right:-144px;
+	}
 	
 	.player-carousel>.carousel-inner .active.left { left: -20%; }
 	.player-carousel>.carousel-inner .active.right{ left:  20%; }
