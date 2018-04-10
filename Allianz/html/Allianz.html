@@ -338,35 +338,35 @@
 			<div class="partners border-bottom border-white row">
 				<!--img class="img-responsive" src="images/partners.png"/-->
 				<div class="col-xs-11 col-md-10 col-centered">
-					<div id="partners-carousel" class=" partners-carousel carousel slide" data-ride="carousel" data-type="multi" data-interval="2000" >
+					<div id="partners-carousel" class=" partners-carousel carousel slide" data-type="multi" data-interval="2000" data-ride="carousel">
 						
 						<div class="carousel-inner">
-							<div class="item active">
+							<div class="item active partner-logo">
 								<div class="carousel-col col-md-2 col-xs-2">
 									<img class="img-responsive" src="images/partners1.png" />
 								</div>
 							</div>
-							<div class="item">
+							<div class="item partner-logo">
 								<div class="carousel-col col-md-2 col-xs-2">
 									<img class="img-responsive" src="images/partners2.png" />
 								</div>
 							</div>
-							<div class="item">
+							<div class="item partner-logo">
 								<div class="carousel-col col-md-2 col-xs-2">
 									<img class="img-responsive" src="images/partners3.png" />
 								</div>
 							</div>
-							<div class="item">
+							<div class="item partner-logo">
 								<div class="carousel-col col-md-2 col-xs-2">
 									<img class="img-responsive" src="images/partners4.png" />
 								</div>
 							</div>
-							<div class="item">
+							<div class="item partner-logo">
 								<div class="carousel-col col-md-2 col-xs-2">
 									<img class="img-responsive" src="images/partners5.png" />
 								</div>
 							</div>
-							<div class="item">
+							<div class="item partner-logo">
 								<div class="carousel-col col-md-2 col-xs-2">
 									<img class="img-responsive" src="images/partners6.png" />
 								</div>
@@ -650,6 +650,10 @@
 			});
 		</script>
 		<script type="text/javascript">
+			$('.player-carousel').carousel({
+				interval:false
+			});
+		
 			$('.player-carousel .item').each(function() {
 				var next = $(this).next();
 				if (!next.length) {
@@ -684,6 +688,9 @@
 					next.children(':first-child').clone().appendTo($(this));
 				}
 			});
+			//$( '.partners-carousel' ).on( 'slid.bs.carousel', function () {
+			//	$('. partner-logo.active').setAttribute('style','display:none;');
+			//});
 		</script>
 		<script type="text/javascript">
 			$('.video-carousel[data-type="multi"] .item').each(function() {
