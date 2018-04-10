@@ -403,6 +403,11 @@ footer {
 	.margin-top {
 		margin-top: 25px;
 	}
+	.border-right {
+		border-right: none;
+		border-bottom-width: 1px;
+		border-bottom-style: solid;
+	}
 	
 	.spiel-carousel>.carousel-inner .active.left { left: -33%; }
 	.spiel-carousel>.carousel-inner .active.right{ left:  33%; }
@@ -495,6 +500,26 @@ footer {
 	}
 	.article-content-preview p {
 		padding: 15px 10px;
+	}
+	
+	.footer-row>div {
+		min-height: 150px;
+		padding-bottom: 20px;
+	}
+	.footer-row h3 {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	.footer-row>div>div {text-align: center;}
+	.footer-social img {
+		width: auto;
+		margin: 0 auto;
+	}
+	.impressum-address, .impressum-mancomm {
+		font-size: 13px;
+	}
+	.impressum-address {
+		margin-bottom: 15px;
 	}
 	
 }
