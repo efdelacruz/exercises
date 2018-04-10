@@ -579,137 +579,21 @@
 		</footer>
 		
 		<!-- 3.3.7 compiled and minified JavaScript and JQuery -->
-		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<!--script src="http://code.jquery.com/jquery-1.10.1.min.js"></script-->
 		<!--script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script -->
-		<!--script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 		<script type="text/javascript" src="http://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
 		
-		<script type="text/javascript">
-			$('.spiel-carousel').carousel({
-				interval:false
-			});
-			$('.spiel-carousel .item').each(function() {
-				var carousel = $('.spiel-carousel');
-				var next = $(this).next();
-				if (!next.length) {
-					next = $(this).siblings(':first');
-				}
-				next.children(':first-child').clone().appendTo($(this));
-				
-				for (var i = 0; i < 1; i++) {
-					next = next.next();
-					if (!next.length) {
-						next = $(this).siblings(':first');
-					}
-					
-					next.children(':first-child').clone().appendTo($(this));
-				}
-				
-				var j=0;
-				$('.spiel-item.active').children().each(function(){
-					if ($(window).width() >= 1200){
-						if (j==1){
-							this.setAttribute('style','padding-bottom:55px;background-color:white;');
-						}else{
-							this.setAttribute('style','margin-top:20px;');
-						}
-					}else if($(window).width() >= 769){
-						if (j==1){
-							this.setAttribute('style','padding-bottom:85px;background-color:white;');
-						}else{
-							this.setAttribute('style','margin-top:20px;');
-						}
-					}
-					j = j+1;
-				});
-				
-			});
-			$( '.spiel-carousel' ).on( 'slid.bs.carousel', function () {
-				$('.spiel-item').children().each(function(){
-					this.setAttribute('style','');
-				});
-				
-				var j=0;
-				$('.spiel-item.active').children().each(function(){
-					if ($(window).width() >= 1200){
-						if (j==1){
-							this.setAttribute('style','padding-bottom:55px;background-color:white;');
-						}else{
-							this.setAttribute('style','margin-top:20px;');
-						}
-					}else if($(window).width() >= 769){
-						if (j==1){
-							this.setAttribute('style','padding-bottom:85px;background-color:white;');
-						}else{
-							this.setAttribute('style','margin-top:20px;');
-						}
-					}
-					j = j+1;
-				});
-			});
-		</script>
-		<script type="text/javascript">
-			$('.player-carousel').carousel({
-				interval:false
-			});
+		<!-- Carousel Scripts -->
+		<script type="text/javascript" src="js/spiel-carousel.js"></script>
+		<script type="text/javascript" src="js/player-carousel.js"></script>
+		<script type="text/javascript" src="js/partners-carousel.js"></script>
+		<script type="text/javascript" src="js/video-carousel.js"></script>
 		
-			$('.player-carousel .item').each(function() {
-				var next = $(this).next();
-				if (!next.length) {
-					next = $(this).siblings(':first');
-				}
-				next.children(':first-child').clone().appendTo($(this));
-				
-				for (var i = 0; i < 3; i++) {
-					next = next.next();
-					if (!next.length) {
-						next = $(this).siblings(':first');
-					}
-					
-					next.children(':first-child').clone().appendTo($(this));
-				}
-			});
-		</script>
-		<script type="text/javascript">
-			$('.partners-carousel[data-type="multi"] .item').each(function() {
-				var next = $(this).next();
-				if (!next.length) {
-					next = $(this).siblings(':first');
-				}
-				next.children(':first-child').clone().appendTo($(this));
-				
-				for (var i = 0; i < 4; i++) {
-					next = next.next();
-					if (!next.length) {
-						next = $(this).siblings(':first');
-					}
-					
-					next.children(':first-child').clone().appendTo($(this));
-				}
-			});
-			//$( '.partners-carousel' ).on( 'slid.bs.carousel', function () {
-			//	$('.partner-logo.active').setAttribute('style','display:none;');
-			//});
-		</script>
-		<script type="text/javascript">
-			$('.video-carousel[data-type="multi"] .item').each(function() {
-				var next = $(this).next();
-				if (!next.length) {
-					next = $(this).siblings(':first');
-				}
-				next.children(':first-child').clone().appendTo($(this));
-				
-				for (var i = 0; i < 4; i++) {
-					next = next.next();
-					if (!next.length) {
-						next = $(this).siblings(':first');
-					}
-					
-					next.children(':first-child').clone().appendTo($(this));
-				}
-			});
-		</script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="jquery.scrollbox.js"></script>
+		
 		<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
 		<script src="js/maploader.js"></script>
 	</body>
