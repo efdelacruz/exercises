@@ -1,2 +1,780 @@
 /* RESET */
 @import url("common.css");
+
+@font-face {
+	font-family: GermanoRegular;
+	src: url('../fonts/germano/Germano-Regular.ttf');
+	src: url('../fonts/germano/Germano-Regular.ttf?#iefix') format('truetype'), /* IE6-IE8 */
+}
+@font-face {
+	font-family: GermanoBold;
+	src: url('../fonts/germano/Germano-Bold.ttf');
+	src: url('../fonts/germano/Germano-Bold.ttf?#iefix') format('truetype'), /* IE6-IE8 */
+}
+@font-face {
+	font-family: GermanoRegular;
+	src: url('../fonts/germano/Germano-Regular.woff');
+}
+@font-face {
+	font-family: GermanoBold;
+	src: url('../fonts/germano/Germano-Bold.woff');
+}
+
+body {
+	font-family: "Open Sans", sans-serif;
+}
+h3 {
+	font-family: GermanoBold;
+	text-align: center;
+}
+footer {
+	min-height: 420px;
+	background-image: url("../images/footer-bg-clean.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	color: white;
+}
+
+
+.border-white {
+	border-color: white;
+}
+.border-blue {
+	border-color: #014b96;
+}
+.border-bottom {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+.border-right {
+	border-right-width: 1px;
+	border-right-style: solid;
+}
+.odd-right {
+	background-color: #014b96;
+	color: white;
+}
+
+
+/* CUSTOMIZATIONS */
+.navbar-toggle {
+	margin-top: 30px;
+	border-color: #fff;
+	background-color: #014b96;
+}
+.navbar-toggle:hover,
+.navbar-toggle:focus {
+	background-color: royalblue;
+}
+.navbar-toggle .icon-bar {
+	background-color: white;
+}
+.btn {
+	padding: 0;
+}
+.img-responsive {
+	width: 100%;
+	height: auto;
+}
+
+.carousel img {
+	width: auto;
+	height: auto;
+}
+.col-centered {
+    float: none;
+    margin: 0 auto;
+	padding: 0;
+}
+.item{
+      transition: 500ms ease-in-out left;
+}
+/*.item.active.spiel-item > div { display:none; }*/
+.item.active > div:first-child { display:block; }
+.carousel-col { 
+    position: relative; 
+    min-height: 1px; 
+    padding: 5px; 
+    float: left;
+}
+
+
+.side-nav {
+	
+}
+
+
+.menu {
+	width: 100%;
+	background-image: url("../images/navbar-bg.png");
+	min-height: 130px;
+	background-repeat: repeat-x;
+	font-family: GermanoRegular, sans-serif;
+	font-size: 24px;
+}
+.carousel-wrapper {
+	background-color: #014b92;
+	width: 100%;
+    margin: 0;
+	/*min-height: 224px;*/
+}
+.splash-banner {
+	/*
+		background-image: url("../images/real-emotions-banner.png");
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		height: 500px;
+	*/
+}
+.game-records {
+	background-color: #014b92;
+}
+.players {
+	background-image: url("../images/carousel-players.png");
+}
+.partners {
+	min-height: 129px;
+	background-image: url("../images/partners.png");
+	background-repeat: repeat-x;
+}
+.videos-ad {
+	background-image: url("../images/videos-bg.png");
+	background-repeat: repeat;
+	min-height: 775px;
+}
+
+
+.spiel-carousel {
+	padding: 25px 0;
+	margin: 0 50px;
+}
+.spiel-item{
+	min-height: 140px;
+}
+.spiel-item.active>.carousel-col{
+	background-color: #e1f0f5;
+	min-height: 140px;
+	padding: 0;
+	border: 1px solid #014b92;
+}
+.spiel-carousel>.carousel-control.left {
+	margin-left: -30px;
+}
+
+.player-carousel>.carousel-inner>.item>.carousel-col {
+	margin: 0;
+	padding: 0;
+}
+
+.spiel-carousel>.carousel-control.left, .spiel-carousel>.carousel-control.right, .player-carousel>.carousel-control.left, .player-carousel>.carousel-control.right {
+	background-image: none;
+}
+
+.spielplan {
+	background-color: #014b92;
+	color: white;
+}
+.spielplan-table {
+	color: white;
+}
+.damen-saison {
+	background-color: #ffffff;
+}
+.damen-saison-table {
+	color: black;
+}
+/*
+.player-carousel {
+	padding-left: 100px;
+}
+*/
+.article {
+	text-align: center;
+}
+.ruckblick-banner {
+	/*
+		background-image: url("../images/ruckblick-banner.png");
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: 100%;
+		background-repeat: no-repeat;
+		min-height: 530px;
+	*/
+}
+.ruckblick-gallery {
+	background-image: url("../images/ruckblick-gallery-bg.png");
+	background-repeat: repeat-x;
+	min-height: 360px;
+}
+.article-img-preview {
+	padding: 0;
+}
+.btn-weiterlesen {
+	padding: 10px 40px;
+	border-radius: 3px;
+	border-color: #568dc6;
+}
+
+.media-wrapper{
+	text-align: center;
+}
+.video-gallery {
+	min-height: 300px;
+	border: 11px solid white;
+	color: white;
+}
+.video-ember {
+	border-bottom: 11px solid white;
+}
+.video-list-label, .video-footer-label {
+	background-color: orange;
+	font-size: 12px;
+	font-weight: bold;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
+.video-carousel>.carousel-control {
+	background-color: orange;
+	background-image: none;
+	width: 50px;
+	height: 50px;
+	margin-top: 20px;
+}
+.video-carousel>.carousel-control.right>span{
+	margin: -20px -15px 0 0;
+}
+.video-carousel>.carousel-control.left>span{
+	margin: -20px 0 0 -15px;
+}
+.side-ads {
+	padding: 0 18px;
+}
+
+#map-container {
+	height: 215px;
+	width: 100%;
+}
+
+
+.menu>div>div>ul {
+	padding-top: 60px;
+}
+.menu>div>div>ul>li>a {
+	padding: 15px 7px 37px 7px;
+	color: black;
+}
+.menu>div>div>ul>li>a:hover {
+	color: #014b92;
+	background-color: inherit;
+}
+.menu>div>div>ul>li.active>a {
+	color: #014b92;
+	background-color: white;
+}
+
+.spielplan a {
+	background-color: white;
+	color: #014b92;
+	text-align: center;
+}
+.spielplan-table>thead {
+	font-family: GermanoBold;
+}
+.spielplan-table>thead>tr {
+    background: #4d81b3;
+}
+.spielplan-table>thead>tr:nth-child(4n+1), .spielplan-table>thead>tr:nth-child(4n+2) {
+    background: inherit;
+}
+.spielplan-table>thead>tr>th, .spielplan-table>tbody>tr>td {
+	border: 0;
+}
+.spielplan-table>tbody>tr>td {
+	font-weight: bold;
+}
+.spielplan-table>tbody>tr.tr-note>td{
+	font-weight: normal;
+	font-style: italic;
+}
+.damen-saison h3 {
+	color: #014b92;
+}
+.damen-saison a {
+	background-color: #014b92;
+	color: white;
+	text-align: center;
+}
+.damen-saison-table>tbody>tr:nth-of-type(odd) {
+	background-color: #E6EDF3;
+}
+.damen-saison-table>thead {
+	font-family: GermanoBold;
+}
+.damen-saison-table>thead>tr>th, .spielplan-table>tbody>tr>td {
+	border: 0;
+}
+.damen-saison-table>tbody>tr>td {
+	padding: 4px;
+	border-top: 1px solid #E8EDF1;
+}
+
+.article-content-preview h3 {
+	padding: 12px 0;
+}
+.article-content-preview p {
+	padding: 25px 12px;
+}
+.article-content-preview>a {
+	color: inherit;
+}
+.article-content-preview img, .article-img-preview img {
+	margin: 0 auto;
+}
+
+.ruckblick-gallery>div>div.article-content-preview>img {
+	max-height: 100px;
+	width: auto;
+}
+
+.media-wrapper h3{
+	color: white;
+	padding: 20px 0;
+}
+.video-list-label {
+	text-align: left;
+}
+.video-footer-label {
+	text-align: right;
+	padding-right: 125px;
+}
+.side-ads>div {
+	border: 11px solid white;
+	margin: 0 0 28px 10px;
+}
+
+.footer-row>div {
+	min-height: 275px;
+}
+.footer-row>div>div>div {
+	padding: 0;
+}
+.footer-social {
+	padding: 0 5px;
+}
+.footer-social>div>div {
+	padding: 0;
+}
+.footer-social img {
+	padding: 10px;
+}
+
+/*
+	* MEDIA QUERIES
+*/
+
+/* PHONES */
+@media screen and (max-width: 768px) {
+	
+	h3 {
+		font-size: 16px;
+	}
+	.tb-padding {
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+	.lr-padding {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+	.col-xs-20p {
+		width: 20%;
+		float: left;
+	}
+	.col-xs-20p>img {
+		width: 100%;
+		height: auto;
+	}
+	.margin-top {
+		margin-top: 25px;
+	}
+	
+	.spiel-carousel>.carousel-inner .active.left { left: -33%; }
+	.spiel-carousel>.carousel-inner .active.right{ left:  33%; }
+	.spiel-carousel>.carousel-inner .next        { left:  33%; }
+	.spiel-carousel>.carousel-inner .prev		 { left: -33%; }
+	.spiel-carousel>.carousel-col                { width: 33%; }
+	.spiel-carousel>.item.active > div:first-child + div { display:block; }
+	.spiel-carousel>.item.active > div:first-child + div + div { display:block; }
+	.spiel-carousel>.carousel-inner>.item.active>div>div>img {
+		padding-bottom: 30px;
+	}
+	.spiel-carousel>.carousel-control.right {
+		margin-right:-88px;
+	}
+	
+	.player-carousel>.carousel-inner .active.left { left: -20%; }
+	.player-carousel>.carousel-inner .active.right{ left:  20%; }
+	.player-carousel>.carousel-inner .next        { left:  20%; }
+	.player-carousel>.carousel-inner .prev		     { left: -20%; }
+	.player-carousel>.carousel-col                { width: 20%; }
+	.player-carousel>.item.active > div:first-child + div { display:block; }
+	.player-carousel>.item.active > div:first-child + div + div { display:block; }
+	.player-carousel>.item.active > div:first-child + div + div + div { display:block; }
+	.player-carousel>.item.active > div:first-child + div + div + div + div { display:block; }
+	
+	#partners-carousel>.carousel-inner .active.left { left: -16.6%; }
+	#partners-carousel>.carousel-inner .active.right{ left:  16.6%; }
+	#partners-carousel>.carousel-inner .next        { left:  16.6%; }
+	#partners-carousel>.carousel-inner .prev		     { left: -16.6%; }
+	#partners-carousel>.carousel-col                { width: 16.6%; }
+	#partners-carousel>.item.active > div:first-child + div { display:block; }
+	#partners-carousel>.item.active > div:first-child + div + div { display:block; }
+	#partners-carousel>.item.active > div:first-child + div + div + div { display:block; }
+	#partners-carousel>.item.active > div:first-child + div + div + div + div { display:block; }
+	#partners-carousel>.item.active > div:first-child + div + div + div + div + div { display:block; }
+	
+	.video-carousel>.carousel-inner .active.left { left: -16.6%; }
+	.video-carousel>.carousel-inner .active.right{ left:  16.6%; }
+	.video-carousel>.carousel-inner .next        { left:  16.6%; }
+	.video-carousel>.carousel-inner .prev		     { left: -16.6%; }
+	.video-carousel>.carousel-col                { width: 16.6%; }
+	.video-carousel>.item.active > div:first-child + div { display:block; }
+	.video-carousel>.item.active > div:first-child + div + div { display:block; }
+	.video-carousel>.item.active > div:first-child + div + div + div { display:block; }
+	.video-carousel>.item.active > div:first-child + div + div + div + div { display:block; }
+	.video-carousel>.item.active > div:first-child + div + div + div + div + div { display:block; }
+	
+	.spielplan,.damen-saison {
+		padding: 18px 10px;
+	}
+	.spielplan-table {
+		margin-top: 18px;
+	}
+	.spielplan-btn, .tabelle-btn {
+		margin-top: 3px;
+	}
+	.damen-saison-table {
+		color: black;
+		font-size: 11px;
+		margin-top: 18px;
+	}
+	.article-content-preview {
+		padding: 23px 45px;
+	}
+	
+	.spielplan a {
+		font-size: 12px;
+		padding: 7px;
+	}
+	.spielplan-table>thead, .damen-saison-table>thead {
+		font-size: 12px;
+	}
+	.spielplan-table>tbody>tr>td {
+		font-size: 12px;
+		padding: 2px;
+	}
+	.spielplan-table>tbody>tr.tr-note>td{
+		font-size: 10px;
+	}
+	.damen-saison a {
+		padding: 5px;
+		font-size: 12px;
+	}
+	
+	.article-content-preview p, .article-content-preview a{
+		font-size: 12px;
+	}
+	.article-content-preview h3 {
+		padding: 10px 0;
+	}
+	.article-content-preview p {
+		padding: 15px 10px;
+	}
+	
+}
+/* OLD SMALLER PHONES */
+@media screen and (max-width: 415px) {
+	
+	.carousel-wrapper {
+		height: 100px;
+	}
+	.spiel-carousel>.carousel-control.right>img, .spiel-carousel>.carousel-control.left>img {
+		height: 50px;
+	}	
+	.spiel-carousel>.carousel-control.left {
+		margin-left:-10px;
+	}	
+	.spiel-carousel>.carousel-control.right {
+		margin-right:-42px;
+	}	
+	.spiel-item.active>.carousel-col{
+		min-height: 50px;
+	}
+
+}
+
+/* TABLETS & LAPTOPS */
+@media screen and (min-width: 769px) {
+	
+	h3 {
+		font-size: 18px;
+	}
+	.tb-padding {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	.lr-padding {
+		padding-left: 60px;
+		padding-right: 60px;
+	}
+	.col-md-20p{
+		width: 20%;
+		float: left;
+	}
+	.margin-top {
+		margin-top: 45px;
+	}
+	
+	.spiel-carousel>.carousel-inner .active.left { left: -33%; }
+	.spiel-carousel>.carousel-inner .active.right{ left:  33%; }
+	.spiel-carousel>.carousel-inner .next        { left:  33%; }
+	.spiel-carousel>.carousel-inner .prev		 { left: -33%; }
+	.spiel-carousel>.carousel-col                { width: 33%; }
+	.spiel-carousel>.item.active > div:first-child + div { display:block; }
+	.spiel-carousel>.item.active > div:first-child + div + div { display:block; }
+	.spiel-carousel>.carousel-inner>.item.active>div>div>img {
+		padding-bottom: 60px;
+	}
+	.spiel-carousel>.carousel-control.right {
+		margin-right:-112px;
+	}
+	
+	.player-carousel>.carousel-inner .active.left { left: -20%; }
+	.player-carousel>.carousel-inner .active.right{ left:  20%; }
+	.player-carousel>.carousel-inner .next        { left:  20%; }
+	.player-carousel>.carousel-inner .prev		     { left: -20%; }
+	.player-carousel>.carousel-col                { width: 20%; }
+	.player-carousel>.carousel-inner>.item>div>img {
+		
+	}
+	.player-carousel>.item.active > div:first-child + div { display:block; }
+	.player-carousel>.item.active > div:first-child + div + div { display:block; }
+	.player-carousel>.item.active > div:first-child + div + div + div { display:block; }
+	.player-carousel>.item.active > div:first-child + div + div + div + div { display:block; }
+	.player-carousel>.carousel-control {
+		margin-top: 360px;
+	}
+	
+	#partners-carousel>.carousel-inner .active.left { left: -16.6%; }
+	#partners-carousel>.carousel-inner .active.right{ left:  16.6%; }
+	#partners-carousel>.carousel-inner .next        { left:  16.6%; }
+	#partners-carousel>.carousel-inner .prev		     { left: -16.6%; }
+	#partners-carousel>.carousel-col                { width: 16.6%; }
+	#partners-carousel>.item.active > div:first-child + div { display:block; }
+	#partners-carousel>.item.active > div:first-child + div + div { display:block; }
+	#partners-carousel>.item.active > div:first-child + div + div + div { display:block; }
+	#partners-carousel>.item.active > div:first-child + div + div + div + div { display:block; }
+	#partners-carousel>.item.active > div:first-child + div + div + div + div + div { display:block; }
+		
+	.video-carousel>.carousel-inner .active.left { left: -16.6%; }
+	.video-carousel>.carousel-inner .active.right{ left:  16.6%; }
+	.video-carousel>.carousel-inner .next        { left:  16.6%; }
+	.video-carousel>.carousel-inner .prev		     { left: -16.6%; }
+	.video-carousel>.carousel-col                { width: 16.6%; }
+	.video-carousel>.item.active > div:first-child + div { display:block; }
+	.video-carousel>.item.active > div:first-child + div + div { display:block; }
+	.video-carousel>.item.active > div:first-child + div + div + div { display:block; }
+	.video-carousel>.item.active > div:first-child + div + div + div + div { display:block; }
+	.video-carousel>.item.active > div:first-child + div + div + div + div + div { display:block; }
+	
+	.ruckblick-gallery.container-fluid, .articles.container-fluid {
+		padding: 0;
+	}
+	
+	.spielplan {
+		background-color: #014b92;
+		color: white;
+		padding: 25px 18px 25px 65px;
+	}
+	.spielplan-table {
+		margin-top: 20px;
+	}
+	.spielplan-btn {
+		margin-top: 5px;
+	}
+	.damen-saison {
+		padding: 25px 65px 25px 18px;
+		background-color: #ffffff;
+	}
+	.damen-saison-table {
+		font-size: 13px;
+		margin-top: 20px;
+	}
+	.article-content-preview {
+		padding: 33px 70px;
+	}
+	
+	.spielplan a {
+		font-size: 14px;
+		padding: 7px;
+	}
+	.spielplan-table>thead, .damen-saison-table>thead {
+		font-size: 14px;
+	}
+	.spielplan-table>tbody>tr>td {
+		font-size: 14px;
+		padding: 4px;
+	}
+	.spielplan-table>tbody>tr.tr-note>td{
+		font-size: 12px;
+	}
+	.damen-saison a {
+		padding: 7px;
+		font-size: 14px;
+	}
+	
+	.article-content-preview p, .article-content-preview a{
+		font-size: 14px;
+	}
+	.article-content-preview h3 {
+		padding: 12px 0;
+	}
+	.article-content-preview p {
+		padding: 25px 12px;
+	}
+	
+	.footer-row h3 {
+		margin-bottom: 30px;
+	}
+	.footer-row p {
+		font-size: 14px;
+	}
+	.impressum-address {
+		margin-bottom: 20px;
+	}
+	
+}
+
+/* LAPTOPS & DESKTOP MONITORS */
+@media screen and (min-width: 1200px) {
+	
+	h3 {
+		font-size: 19px;
+	}
+	.tb-padding {
+		padding-top: 25px;
+		padding-bottom: 25px;
+	}
+	.lr-padding {
+		padding-left: 80px;
+		padding-right: 80px;
+	}
+	.margin-top {
+		margin-top: 45px;
+	}
+	
+	.spiel-carousel>.carousel-inner .active.left { left: -33%; }
+	.spiel-carousel>.carousel-inner .active.right{ left:  33%; }
+	.spiel-carousel>.carousel-inner .next        { left:  33%; }
+	.spiel-carousel>.carousel-inner .prev		 { left: -33%; }
+	.spiel-carousel>.carousel-col                { width: 33%; }
+	.spiel-carousel>.item.active > div:first-child + div { display:block; }
+	.spiel-carousel>.item.active > div:first-child + div + div { display:block; }
+	.spiel-carousel>.carousel-inner>.item.active>div>div>img {
+		padding-bottom: 60px;
+	}
+	.spiel-carousel>.carousel-control.right {
+		margin-right:-144px;
+	}
+	
+	.player-carousel>.carousel-inner .active.left { left: -20%; }
+	.player-carousel>.carousel-inner .active.right{ left:  20%; }
+	.player-carousel>.carousel-inner .next        { left:  20%; }
+	.player-carousel>.carousel-inner .prev		  { left: -20%; }
+	.player-carousel>.carousel-col                { width: 20%; }
+	.player-carousel>.item.active > div:first-child + div { display:block; }
+	.player-carousel>.item.active > div:first-child + div + div { display:block; }
+	.player-carousel>.item.active > div:first-child + div + div + div { display:block; }
+	.player-carousel>.item.active > div:first-child + div + div + div + div { display:block; }
+	
+	#partners-carousel>.carousel-inner .active.left { left: -16.6%; }
+	#partners-carousel>.carousel-inner .active.right{ left:  16.6%; }
+	#partners-carousel>.carousel-inner .next        { left:  16.6%; }
+	#partners-carousel>.carousel-inner .prev		     { left: -16.6%; }
+	#partners-carousel>.carousel-col                { width: 16.6%; }
+	#partners-carousel>.item.active > div:first-child + div { display:block; }
+	#partners-carousel>.item.active > div:first-child + div + div { display:block; }
+	#partners-carousel>.item.active > div:first-child + div + div + div { display:block; }
+	#partners-carousel>.item.active > div:first-child + div + div + div + div { display:block; }
+	#partners-carousel>.item.active > div:first-child + div + div + div + div + div { display:block; }
+	
+	.video-carousel>.carousel-inner .active.left { left: -16.6%; }
+	.video-carousel>.carousel-inner .active.right{ left:  16.6%; }
+	.video-carousel>.carousel-inner .next        { left:  16.6%; }
+	.video-carousel>.carousel-inner .prev		     { left: -16.6%; }
+	.video-carousel>.carousel-col                { width: 16.6%; }
+	.video-carousel>.item.active > div:first-child + div { display:block; }
+	.video-carousel>.item.active > div:first-child + div + div { display:block; }
+	.video-carousel>.item.active > div:first-child + div + div + div { display:block; }
+	.video-carousel>.item.active > div:first-child + div + div + div + div { display:block; }
+	.video-carousel>.item.active > div:first-child + div + div + div + div + div { display:block; }
+	
+	.spielplan {
+		background-color: #014b92;
+		color: white;
+		padding: 30px 15px 30px 80px;
+	}
+	.spielplan-table {
+		color: white;
+		margin-top: 20px;
+	}
+	.spielplan-btn {
+		margin-top: 5px;
+	}
+	.damen-saison {
+		padding: 30px 80px 30px 15px;
+		background-color: #ffffff;
+	}
+	.damen-saison-table {
+		font-size: 13px;
+		margin-top: 20px;
+	}
+	.article-content-preview {
+		padding: 43px 97px;
+	}
+	
+	.spielplan a {
+		font-size: 14px;
+		padding: 7px;
+	}
+	.spielplan-table>thead, .damen-saison-table>thead {
+		font-size: 14px;
+	}
+	.spielplan-table>tbody>tr>td {
+		font-size: 14px;
+		padding: 4px;
+	}
+	.spielplan-table>tbody>tr.tr-note>td{
+		font-size: 12px;
+	}
+	.damen-saison a {
+		padding: 7px;
+		font-size: 14px;
+	}
+	
+	.article-content-preview p, .article-content-preview a{
+		font-size: 14px;
+	}
+	.article-content-preview h3 {
+		padding: 12px 0;
+	}
+	.article-content-preview p {
+		padding: 25px 12px;
+	}
+}
