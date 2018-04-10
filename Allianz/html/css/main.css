@@ -25,6 +25,7 @@ body {
 }
 h3 {
 	font-family: GermanoBold;
+	text-align: center;
 }
 footer {
 	min-height: 420px;
@@ -33,6 +34,7 @@ footer {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+	color: white;
 }
 
 
@@ -302,6 +304,21 @@ footer {
 	margin: 0 auto;
 }
 
+.footer-row>div {
+	min-height: 275px;
+}
+.footer-row>div>div>div {
+	padding: 0;
+}
+.footer-social {
+	padding: 0 5px;
+}
+.footer-social>div>div {
+	padding: 0;
+}
+.footer-social img {
+	padding: 10px;
+}
 
 /*
 	* MEDIA QUERIES
@@ -554,6 +571,16 @@ footer {
 	}
 	.article-content-preview p {
 		padding: 25px 12px;
+	}
+	
+	.footer-row h3 {
+		margin-bottom: 30px;
+	}
+	.footer-row p {
+		font-size: 14px;
+	}
+	.impressum-address {
+		margin-bottom: 20px;
 	}
 	
 }
